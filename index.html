@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="favicon.svg" />
+    <link rel="mask-icon" href="mask-icon.svg" color="#000000" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
 
-    <title>Isometrie &#8284; Digital Products</title>
+    <title>Building digital products</title>
 
     <link
       rel="stylesheet"
@@ -21,48 +25,53 @@
     <link rel="stylesheet" href="css/light.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
 
     <!-- Animate On Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body>
-    <div id="anchor-top">
-      <nav id="navigation">
-        <div id="logo" class=""><a href="#anchor-top">Isometrie</a></div>
+    <div class="wrapper">
+      <div id="anchor-top">
+        <nav id="navigation">
+          <div id="logo" class=""><a href="#anchor-top">Isometrie</a></div>
 
-        <div id="navbar" class="float-right">
-          <ul>
-            <li><a href="#anchor-first">Cases</a></li>
-            <li><a href="#anchor-stack">Stack</a></li>
+          <div id="navbar" class="float-right">
+            <ul>
+              <li><a href="#anchor-first">Cases</a></li>
+              <li><a href="#anchor-stack">Stack</a></li>
 
-            <li>
-              <a href="#anchor-hey" class="btn-getintouch sayhi">Say hello</a>
-            </li>
-          </ul>
+              <li><a href="#anchor-hey" class="btn-getintouch sayhi">Say hello</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="about">
+        <div class="intro-typewrite" data-period="2000" data-type='["Building digital products", "User Interfaces", "xReality", "Digital Assets", "Data Visualization", "Creative Technologies"]'>
+          <span class="wrap"></span>
         </div>
-      </nav>
+      </div>
+
+      <div class="video-container">
+        <video playsinline autoplay muted loop poster="mp4/header.jpg">
+          <source src="mp4/header.mp4" type="video/mp4" />
+          Your browser does not support embedded video.
+        </video>
+      </div>
     </div>
-
-    <div class="about">Building digital products</div>
-
-    <div class="video-container">
-      <video playsinline autoplay muted loop poster="mp4/header.jpg">
-        <source src="mp4/header.mp4" type="video/mp4" />
-        Your browser does not support embedded video.
-      </video>
-    </div>
-
-    <!--<div class="container-fluid p-0 style="height: 50vw"></div>-->
 
     <div id="anchor-first" class="container-fluid py-5">
       <div class="row pb-5">
         <div class="col-xl-4 col-lg-12 p-0">
           <h1 class="pb-4">Landingpage</h1>
 
-          <div class="intro bubble-light" data-aos="flip-up">
+          <div class="intro bubble-light" data-aos="zoom-in-up">
             <h3>Introduction</h3>
-            The landing page is the central entry point for all web services developed by the Basic Visualization team. The open source applications are provided as images on Docker Hub and as
-            repositories on GitHub.
+            <p>
+              The landing page is the central entry point for all web services developed by the Basic Visualization team. The open source applications are provided as images on Docker Hub and as
+              repositories on GitHub.
+            </p>
           </div>
 
           <h3 class="pt-4 pb-2">Features</h3>
@@ -106,7 +115,7 @@
     </div>
 
     <!-- SECOND CASE -->
-    <div id="secondcase" class="container-fluid case-spacer">
+    <div id="secondcase" class="container-fluid">
       <div class="row justify-content-between divider">
         <div class="col-xl-7 col-lg-12 p-0">
           <div id="carouselExampleControls" class="carousel slide shadow" data-ride="carousel">
@@ -135,10 +144,12 @@
         <div class="col-xl-4 col-lg-12 p-0">
           <h1 class="pb-4">Location map service</h1>
 
-          <div class="intro bubble-white">
+          <div class="intro bubble-white" data-aos="zoom-in-up">
             <h3>Introduction</h3>
-            With the location map service, the user can create and export individual maps. He can embed these maps on his company website via iframe. The user is guided through the creation process
-            with the help of a realtime wizard.
+            <p>
+              With the location map service, the user can create and export individual maps. He can embed these maps on his company website via iframe. The user is guided through the creation process
+              with the help of a realtime wizard.
+            </p>
           </div>
 
           <h3 class="pt-4 pb-2">Features</h3>
@@ -167,70 +178,61 @@
     <div id="thirdcase" class="container-fluid py-5">
       <div class="row divider">
         <div class="col-xl-4 col-lg-12 p-0">
-          <h1 class="pb-4">Image processing</h1>
+          <h1 class="pb-4">Thesis Blackbox Testing (R&D) <i class="fas fa-microscope"></i></h1>
 
-          <div class="intro bubble" data-aos="flip-up">
+          <div class="intro bubble-light" data-aos="zoom-in-up">
             <h3 class="">Introduction</h3>
-            The landing page is the central entry point for all web services developed by the Basic Visualization team. The open source applications are provided as images on Docker Hub and as
-            repositories on GitHub.
+            <p>Intro</p>
           </div>
 
           <h3 class="pt-4 pb-2">Features</h3>
           <div class="features">
-            <li data-aos="fade-right" data-aos-offset="0"><i class="far fa-check-circle"></i>Hardware integration</li>
-            <li data-aos="fade-right" data-aos-offset="100"><i class="far fa-check-circle"></i>Synthetic data generation</li>
-            <li data-aos="fade-right" data-aos-offset="200"><i class="far fa-check-circle"></i>Software development</li>
-            <li data-aos="fade-right" data-aos-offset="300"><i class="far fa-check-circle"></i>Hardware hacking</li>
-            <li data-aos="fade-right" data-aos-offset="400"><i class="far fa-check-circle"></i>Industrial camera setup</li>
+            <li data-aos="fade-right" data-aos-offset="200"><i class="far fa-check-circle"></i>Blackbox Testing</li>
+            <li data-aos="fade-right" data-aos-offset="0"><i class="far fa-check-circle"></i>Software specification</li>
           </div>
 
           <h3 class="pt-4 pb-2">Tools</h3>
           <div class="tags">
-            <li>Python</li>
-            <li>OpenCV</li>
-            <li>NumPy</li>
-            <li>SQLite</li>
-            <li>Arduino</li>
-          </div>
-
-          <div class="py-4">
-            <span class="btn-primary">
-              <a href="#" target="_blank">Repository</a>
-              <i class="fas fa-external-link-alt"></i>
-            </span>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>Selenium</li>
+            <li>Axure</li>
           </div>
         </div>
 
         <div class="col-xl-8 col-lg-12 p-0">
-          <img class="float-right shadow" src="img/study/sequence.jpg" alt="" />
+          <img class="float-right shadow" src="img/blackbox/1.jpg" alt="" />
+          <img class="float-right shadow mt-5" src="img/blackbox/2.jpg" alt="" />
         </div>
       </div>
     </div>
 
     <!-- SECOND CASE -->
-    <div id="secondcase" class="container-fluid case-spacer">
+    <div id="secondcase" class="container-fluid">
       <div class="row justify-content-between divider">
         <div class="col-xl-7 col-lg-12 p-0">
-          <img class="float-right shadow" src="img/pariser-platz/1.jpg" alt="" />
-
           <img class="float-right shadow" src="img/pariser-platz/2.jpg" alt="" />
+
+          <img class="float-right shadow mt-5" src="img/pariser-platz/1.jpg" alt="" />
         </div>
 
         <div class="col-xl-4 col-lg-12 p-0">
           <h1 class="pb-4">Pariser Platz, Berlin</h1>
 
-          <div class="intro bubble-white">
+          <div class="intro bubble-white" data-aos="zoom-in-up">
             <h3>Introduction</h3>
-            In the early stages of the engineering project, digital renderings were designed to give stakeholders an impression of the retrofit buses. For this purpose, Pariser Platz in Berlin was
-            completely recreated.
+            <p>
+              In the early stages of the engineering project, digital renderings were designed to give stakeholders an impression of the retrofit buses. For this purpose, Pariser Platz in Berlin was
+              completely recreated.
+            </p>
           </div>
 
           <h3 class="pt-4 pb-2">Features</h3>
           <div class="features">
-            <li><i class="far fa-dot-circle"></i>design and construction of all houses</li>
-            <li><i class="far fa-dot-circle"></i>references from 2.5d buildings and illustrations</li>
-            <li><i class="far fa-dot-circle"></i>3d modeling of all buildings</li>
-            <li><i class="far fa-dot-circle"></i>scene setup with lighting</li>
+            <li><i class="far fa-check-circle"></i>reconstruction of all buildings</li>
+            <li><i class="far fa-check-circle"></i>references from 2.5d buildings and illustrations</li>
+            <li><i class="far fa-check-circle"></i>3d modeling of all buildings</li>
+            <li><i class="far fa-check-circle"></i>scene setup with lighting</li>
           </div>
 
           <h3 class="pt-4 pb-2">Tools</h3>
@@ -243,13 +245,61 @@
       </div>
     </div>
 
+    <!-- CASE IMAGE PROCESSING -->
+    <div id="thirdcase" class="container-fluid py-5">
+      <div class="row divider">
+        <div class="col-xl-4 col-lg-12 p-0">
+          <h1 class="pb-4">Image processing software (R&D) <i class="fas fa-microscope"></i></h1>
+
+          <div class="intro bubble-light" data-aos="zoom-in-up">
+            <h3 class="">Introduction</h3>
+            <p>
+              At the Institute for Machine Tools and Production Engineering of the Technical University of Braunschweig, a robot-based tape applicator is currently being developed, which will be able
+              to produce components automatically in the future using thermoplastic, unidirectional fibre composites.
+            </p>
+            <p>In order to monitor the production of the tape laying process and the resulting component quality, an image-based process monitoring system was design and build.</p>
+          </div>
+
+          <h3 class="pt-4 pb-2">Features</h3>
+          <div class="features">
+            <li data-aos="fade-right" data-aos-offset="200"><i class="far fa-check-circle"></i>Sensor data acquisition</li>
+            <li data-aos="fade-right" data-aos-offset="0"><i class="far fa-check-circle"></i>Software architecture</li>
+            <li data-aos="fade-right" data-aos-offset="0"><i class="far fa-check-circle"></i> Image processing algorithm</li>
+            <li data-aos="fade-right" data-aos-offset="100"><i class="far fa-check-circle"></i>Synthetic data generation</li>
+            <li data-aos="fade-right" data-aos-offset="300"><i class="far fa-check-circle"></i>Hardware hacking</li>
+            <li data-aos="fade-right" data-aos-offset="400"><i class="far fa-check-circle"></i>Industrial camera setup</li>
+          </div>
+
+          <h3 class="pt-4 pb-2">Tools</h3>
+          <div class="tags">
+            <li>Python</li>
+            <li>OpenCV</li>
+            <li>NumPy</li>
+            <li>pandas</li>
+            <li>Matplotlib</li>
+            <li>SQLite</li>
+            <li>Arduino</li>
+          </div>
+
+          <div class="py-4">
+            <a class="btn-primary" href="https://github.com/isometrie/image-processing" target="_blank">Repository <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="col-xl-8 col-lg-12 p-0">
+          <img class="float-right shadow" src="img/study/ips.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
     <!-- STACK INTRO -->
-    <div class="stack-intro">Tech Stack</div>
-    <div class="video-container">
-      <video playsinline autoplay muted loop poster="mp4/stack-poster.jpg">
-        <source src="mp4/stack_x264.mp4" type="video/mp4" />
-        Your browser does not support embedded video.
-      </video>
+    <div class="wrapper">
+      <div class="video-container">
+        <video playsinline autoplay muted loop poster="mp4/stack-poster.jpg">
+          <source src="mp4/stack_x264.mp4" type="video/mp4" />
+          Your browser does not support embedded video.
+        </video>
+      </div>
     </div>
 
     <div id="anchor-stack" class="container-fluid py-5">
@@ -264,7 +314,7 @@
                 <li>Figma</li>
                 <li>Adobe XD</li>
                 <li>Axure</li>
-                <li>Adobe Creative Cloud</li>
+                <li>Adobe CC</li>
               </td>
             </tr>
 
@@ -275,8 +325,17 @@
                 <li>CSS3</li>
                 <li>SCSS</li>
                 <li>Bootstrap</li>
-
+                <li>Javascript</li>
                 <li>jQuery</li>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Assets</td>
+              <td class="stack-tags-web">
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Cinema4D</li>
               </td>
             </tr>
 
@@ -286,7 +345,7 @@
                 <li>Python</li>
                 <li>SQLite</li>
                 <li>MongoDB</li>
-                <li><i class="fas fa-spinner"></i></li>
+                <li>...</li>
               </td>
             </tr>
 
@@ -296,7 +355,7 @@
                 <li>GIT</li>
                 <li>GitHub</li>
                 <li>Docker</li>
-                <li><i class="fas fa-spinner"></i></li>
+                <li>...</li>
               </td>
             </tr>
 
@@ -315,6 +374,7 @@
               <td class="stack-tags-science">
                 <li>Matlab</li>
                 <li>Simulink</li>
+                <li>Python</li>
                 <li>NumPy</li>
                 <li>OpenCV</li>
               </td>
@@ -324,7 +384,7 @@
       </div>
     </div>
 
-    <div id="anchor-hey" class="container-fluid case-spacer">
+    <div id="anchor-hey" class="container-fluid">
       <div class="row justify-content-center" style="padding-top: 200px">
         <div class="col-sm-10 col-md-6">
           <div class="typewrite" data-period="1500" data-type='["Hey", "Nice to meet you.", "Get in touch" ]'>
@@ -347,6 +407,8 @@
 
     <script src="js/sayhi.js"></script>
 
+    <script src="js/intro.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/smoothscrolling.js"></script>
@@ -362,9 +424,5 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
-    <!--
-    <script src="js/observer.js"></script>
-    -->
   </body>
 </html>
