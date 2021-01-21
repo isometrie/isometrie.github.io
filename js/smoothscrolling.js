@@ -5,7 +5,7 @@ document.querySelectorAll('a[href*="#anchor"]').forEach((anchor) => {
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
       inline: "start",
-      block: "center",
+      block: "start",
     });
   });
 });
