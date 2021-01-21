@@ -43,6 +43,7 @@ TxtType.prototype.tick = function () {
 
 window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
+
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute("data-type");
     var period = elements[i].getAttribute("data-period");
@@ -54,5 +55,6 @@ window.onload = function () {
   var css = document.createElement("style");
   //css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+
   document.body.appendChild(css);
 };
