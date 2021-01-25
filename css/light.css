@@ -97,9 +97,9 @@ video.finish {
 }
 
 video.video-stack {
-  width: 40vw;
-  margin: 0 30vw;
-  height: 80vh;
+  width: 60vw;
+  margin: 20vh 20vw;
+  height: 60vh;
 }
 
 @media (max-width: 767.98px) {
@@ -216,10 +216,11 @@ h3 {
 
 @media (max-width: 767.98px) {
   #navigation {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0vw;
     width: 100vw;
     border-radius: none;
+    font-weight: 500;
   }
 }
 
@@ -246,7 +247,7 @@ h3 {
 
 @media (max-width: 767.98px) {
   #navbar li {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 }
 
@@ -789,4 +790,16 @@ tr td:first-child {
   color: var(--color-primary);
   font-size: 26px;
 }
+
+/*
+.circle {
+  background-color: var(--color-secondary);
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  transform: translate(0, -100px);
+  border-radius: 50px;
+}*/
 /*# sourceMappingURL=light.css.map */
