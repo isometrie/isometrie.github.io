@@ -19,6 +19,16 @@ window.addEventListener("scroll", function (e) {
     nav.style.transition = "transform 1s";
   }
 
+  if (currentScroll < 100) {
+    // navigation disappears
+    nav.style.boxShadow = "none";
+  }
+
+  if (currentScroll > 100) {
+    // navigation disappears
+    nav.style.boxShadow = "0 5px 20px rgba(0, 0, 0, 0.2)";
+  }
+
   if (currentScroll < lastScroll || fullHeight >= document.body.offsetHeight - 10) {
     // set default layout
     nav.style.transform = "translate(0,0)";
