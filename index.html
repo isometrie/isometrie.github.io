@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#3700ff" />
     <link rel="icon" href="favicon.svg" />
     <link rel="mask-icon" href="mask-icon.svg" color="#000000" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -24,8 +24,14 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="css/light.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet" />-->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Suranna&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet" />
 
     <!-- Animate On Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -34,37 +40,33 @@
     <div class="wrapper">
       <div id="anchor-top">
         <nav id="navigation">
-          <div id="logo" class=""><a href="#anchor-top">Isometrie</a></div>
+          <div id="logo"><a href="#anchor-top">Isometrie</a></div>
 
           <div id="navbar" class="float-right">
             <ul>
               <li><a href="#anchor-first">Cases</a></li>
+              <li><a href="#anchor-lab">Lab</a></li>
               <li><a href="#anchor-stack">Stack</a></li>
-
-              <li><a href="#anchor-hey" class="btn-getintouch sayhi">Say hello</a></li>
+              <li><a href="#anchor-hey" class="btn-getintouch sayhello">Say Hello</a></li>
             </ul>
           </div>
         </nav>
       </div>
 
-      <div class="about">
-        <div class="intro-typewrite" data-period="2000" data-type='["Building digital products", "User Interfaces", "xReality", "Digital Assets", "Data Visualization", "Creative Technologies"]'>
-          <span class="wrap"></span>
-        </div>
+      <div class="about serif">
+        <span>Design</span> and <span>technology</span> that powers digital product design and user experiences. Working as a software developer, educated in both, design and engineering.
       </div>
 
-      <div class="video-container">
-        <video playsinline autoplay muted loop poster="mp4/header.jpg">
-          <source src="mp4/header.mp4" type="video/mp4" />
-          Your browser does not support embedded video.
-        </video>
-      </div>
+      <video class="cloud" playsinline autoplay muted loop poster="mp4/cloud.jpg">
+        <source src="mp4/cloud.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
     </div>
 
     <div id="anchor-first" class="container-fluid py-5">
       <div class="row pb-5">
         <div class="col-xl-4 col-lg-12 p-0">
-          <h1 class="pb-4">Landingpage</h1>
+          <h1 class="py-4">Landingpage</h1>
 
           <div class="intro bubble-light" data-aos="zoom-in-up">
             <h3>Introduction</h3>
@@ -85,7 +87,7 @@
           </div>
 
           <h3 class="pt-4 pb-2">Tools</h3>
-          <div class="tags">
+          <div class="tags tags-dark">
             <li>Mapbox GL JS</li>
             <li>Bootstrap</li>
             <li>CSS3</li>
@@ -104,7 +106,7 @@
           </div>
 
           <div class="py-4">
-            <a class="btn-primary" href="https://dev.basisvisualisierung.niedersachsen.dev/" target="_blank">Visit Website <i class="fas fa-external-link-alt"></i></a>
+            <a class="btn btn-primary" href="https://dev.basisvisualisierung.niedersachsen.dev/" target="_blank">Visit Website <i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
 
@@ -115,10 +117,10 @@
     </div>
 
     <!-- SECOND CASE -->
-    <div id="secondcase" class="container-fluid">
+    <div id="caseMap" class="container-fluid">
       <div class="row justify-content-between divider">
         <div class="col-xl-7 col-lg-12 p-0">
-          <div id="carouselExampleControls" class="carousel slide shadow" data-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide carousel-fade shadow" data-ride="carousel" data-interval="3000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/location-map/1.jpg" alt="" />
@@ -142,7 +144,7 @@
         </div>
 
         <div class="col-xl-4 col-lg-12 p-0">
-          <h1 class="pb-4">Location map service</h1>
+          <h1 class="py-4">Location map service</h1>
 
           <div class="intro bubble-white" data-aos="zoom-in-up">
             <h3>Introduction</h3>
@@ -162,7 +164,7 @@
           </div>
 
           <h3 class="pt-4 pb-2">Tools</h3>
-          <div class="tags">
+          <div class="tags tags-dark">
             <li>User stories</li>
             <li>User flow</li>
             <li>Paper prototyping</li>
@@ -174,52 +176,109 @@
       </div>
     </div>
 
-    <!-- THIRD CASE -->
-    <div id="thirdcase" class="container-fluid py-5">
-      <div class="row divider">
-        <div class="col-xl-4 col-lg-12 p-0">
-          <h1 class="pb-4">Thesis Blackbox Testing (R&D) <i class="fas fa-microscope"></i></h1>
+    <!-- CASE BLOG -->
+    <div id="caseBlog" class="container-fluid">
+      <div class="row justify-content-between divider">
+        <div class="col-xl-3 col-lg-12 p-0">
+          <h1 class="py-4">Marketing blog & portfolio</h1>
 
           <div class="intro bubble-light" data-aos="zoom-in-up">
-            <h3 class="">Introduction</h3>
-            <p>Intro</p>
+            <h3>Introduction</h3>
+            <p>Based on the WordPress engine I have designed and developed a website that works both as a blog.</p>
           </div>
 
           <h3 class="pt-4 pb-2">Features</h3>
           <div class="features">
-            <li data-aos="fade-right" data-aos-offset="200"><i class="far fa-check-circle"></i>Blackbox Testing</li>
-            <li data-aos="fade-right" data-aos-offset="0"><i class="far fa-check-circle"></i>Software specification</li>
+            <li><i class="far fa-check-circle"></i>Blog & Portfolio</li>
+            <li><i class="far fa-check-circle"></i>Wordpress theming</li>
+            <li><i class="far fa-check-circle"></i>Styleguide</li>
+            <li><i class="far fa-check-circle"></i>Multi-slider</li>
           </div>
 
           <h3 class="pt-4 pb-2">Tools</h3>
-          <div class="tags">
-            <li>Java</li>
-            <li>Javascript</li>
-            <li>Selenium</li>
-            <li>Axure</li>
+          <div class="tags tags-dark">
+            <li>Wordpress</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
           </div>
         </div>
 
-        <div class="col-xl-8 col-lg-12 p-0">
-          <img class="float-right shadow" src="img/blackbox/1.jpg" alt="" />
-          <img class="float-right shadow mt-5" src="img/blackbox/2.jpg" alt="" />
+        <div class="col-xl-9 col-lg-12 p-0">
+          <img class="float-right" src="img/blog/1.png" alt="" />
         </div>
       </div>
     </div>
 
-    <!-- SECOND CASE -->
-    <div id="secondcase" class="container-fluid">
+    <!-- CASE THESIS -->
+    <div id="caseThesis" class="container-fluid py-5">
       <div class="row justify-content-between divider">
-        <div class="col-xl-7 col-lg-12 p-0">
-          <img class="float-right shadow" src="img/pariser-platz/2.jpg" alt="" />
-
-          <img class="float-right shadow mt-5" src="img/pariser-platz/1.jpg" alt="" />
+        <div class="col-xl-6 col-lg-12 p-0">
+          <div id="sliderBB" class="carousel slide carousel-fade shadow" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/blackbox/1.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/blackbox/2.jpg" alt="" />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#sliderBB" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-arrow-alt-circle-left"></i></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sliderBB" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-arrow-alt-circle-right"></i></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
 
-        <div class="col-xl-4 col-lg-12 p-0">
-          <h1 class="pb-4">Pariser Platz, Berlin</h1>
+        <div class="col-xl-5 col-lg-12 p-0">
+          <h1 class="py-4">Thesis Blackbox Testing (R&D) <i class="fas fa-microscope"></i></h1>
 
           <div class="intro bubble-white" data-aos="zoom-in-up">
+            <h3 class="">Introduction</h3>
+            <p>
+              Compliance with quality standards in the area of web & mobile apps requires comprehensive testing of these applications. The testing effort required for this (test coverage) cannot be
+              covered economically by manual testing alone.
+            </p>
+            <p>To improve test coverage, automated surface tests are used. These automated tests (test cases) were systematized during specification, quotation and test execution.</p>
+          </div>
+
+          <h3 class="pt-4 pb-2">Features</h3>
+          <div class="features">
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Blackbox (E2E) Testing</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Automated frontend testing</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Test specification</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Requirements engineering</li>
+          </div>
+
+          <h3 class="pt-4 pb-2">Tools</h3>
+          <div class="tags tags-dark">
+            <li>Selenium</li>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Axure</li>
+            <li>User Interface</li>
+          </div>
+
+          <div class="py-4">
+            <a class="btn btn-dark" href="#anchor-hey">PDF on request <i class="fas fa-book"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE 3D PARISER PLATZ-->
+    <div id="caseBerlin" class="container-fluid">
+      <div class="row justify-content-between divider">
+        <div class="col-xl-4 col-lg-12 p-0">
+          <h1 class="py-4">Pariser Platz, Berlin</h1>
+
+          <div class="intro bubble-light" data-aos="zoom-in-up">
             <h3>Introduction</h3>
             <p>
               In the early stages of the engineering project, digital renderings were designed to give stakeholders an impression of the retrofit buses. For this purpose, Pariser Platz in Berlin was
@@ -229,27 +288,89 @@
 
           <h3 class="pt-4 pb-2">Features</h3>
           <div class="features">
-            <li><i class="far fa-check-circle"></i>reconstruction of all buildings</li>
-            <li><i class="far fa-check-circle"></i>references from 2.5d buildings and illustrations</li>
-            <li><i class="far fa-check-circle"></i>3d modeling of all buildings</li>
-            <li><i class="far fa-check-circle"></i>scene setup with lighting</li>
+            <li><i class="far fa-check-circle"></i>Scene reconstruction</li>
+            <li><i class="far fa-check-circle"></i>References from 2.5d city models</li>
+            <li><i class="far fa-check-circle"></i>3d models of all buildings</li>
+            <li><i class="far fa-check-circle"></i>Scene setup and rendering</li>
           </div>
 
           <h3 class="pt-4 pb-2">Tools</h3>
-          <div class="tags">
+          <div class="tags tags-dark">
             <li>Cinema4D</li>
             <li>Rhino3D</li>
-            <li>Adobe CC</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Photoshop</li>
+            <li>Google Street View</li>
+          </div>
+
+          <div class="py-4">
+            <a class="btn btn-primary" href="https://www.iav.com/app/uploads/2019/04/iav_1809_elocity_handout.pdf" target="_blank">View brochure <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="col-xl-8 col-lg-12 p-0">
+          <img class="float-right shadow" src="img/pariser-platz/2.jpg" alt="" />
+          <img class="float-right shadow mt-5" src="img/pariser-platz/1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE SCB IPAD -->
+    <div id="caseSCB" class="container-fluid">
+      <div class="row justify-content-between divider">
+        <div class="col-xl-7 col-lg-12 p-0">
+          <div id="sliderScb" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/s-cb/s-cb1.png" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/s-cb/s-cb2.png" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/s-cb/s-cb3.png" alt="" />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#sliderScb" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-arrow-alt-circle-left"></i></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sliderScb" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-arrow-alt-circle-right"></i></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-12 p-0">
+          <h1 class="py-4">iPad presentation</h1>
+
+          <div class="intro bubble-white" data-aos="zoom-in-up">
+            <h3>Introduction</h3>
+            <p>For the Internationale Automobil Ausstellung IAA we designed an interactive ipad application. the app included interactive features like embedded videos and slide functions.</p>
+          </div>
+
+          <h3 class="pt-4 pb-2">Features</h3>
+          <div class="features">
+            <li><i class="far fa-dot-circle"></i>Interactive layout</li>
+            <li><i class="far fa-dot-circle"></i>Embedded videos and sliders</li>
+          </div>
+
+          <h3 class="pt-4 pb-2">Tools</h3>
+          <div class="tags tags-dark">
+            <li>Adobe InDesign</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Photoshop</li>
           </div>
         </div>
       </div>
     </div>
 
     <!-- CASE IMAGE PROCESSING -->
-    <div id="thirdcase" class="container-fluid py-5">
-      <div class="row divider">
-        <div class="col-xl-4 col-lg-12 p-0">
-          <h1 class="pb-4">Image processing software (R&D) <i class="fas fa-microscope"></i></h1>
+    <div id="caseImageProcessing" class="container-fluid">
+      <div class="row divider justify-content-between">
+        <div class="col-xl-5 col-lg-12 p-0">
+          <h1 class="py-4">Image processing software (R&D) <i class="fas fa-microscope"></i></h1>
 
           <div class="intro bubble-light" data-aos="zoom-in-up">
             <h3 class="">Introduction</h3>
@@ -262,19 +383,21 @@
 
           <h3 class="pt-4 pb-2">Features</h3>
           <div class="features">
-            <li data-aos="fade-right" data-aos-offset="200"><i class="far fa-check-circle"></i>Sensor data acquisition</li>
-            <li data-aos="fade-right" data-aos-offset="0"><i class="far fa-check-circle"></i>Software architecture</li>
-            <li data-aos="fade-right" data-aos-offset="0"><i class="far fa-check-circle"></i> Image processing algorithm</li>
-            <li data-aos="fade-right" data-aos-offset="100"><i class="far fa-check-circle"></i>Synthetic data generation</li>
-            <li data-aos="fade-right" data-aos-offset="300"><i class="far fa-check-circle"></i>Hardware hacking</li>
-            <li data-aos="fade-right" data-aos-offset="400"><i class="far fa-check-circle"></i>Industrial camera setup</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Research & development</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Sensor data acquisition</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Software architecture</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i> Image processing algorithm</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Synthetic data generation</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Industrial camera setup</li>
+            <li data-aos="fade-right"><i class="far fa-check-circle"></i>Documentation (115 pages)</li>
           </div>
 
           <h3 class="pt-4 pb-2">Tools</h3>
-          <div class="tags">
+          <div class="tags tags-dark">
             <li>Python</li>
             <li>OpenCV</li>
             <li>NumPy</li>
+            <li>Tkinter</li>
             <li>pandas</li>
             <li>Matplotlib</li>
             <li>SQLite</li>
@@ -282,112 +405,170 @@
           </div>
 
           <div class="py-4">
-            <a class="btn-primary" href="https://github.com/isometrie/image-processing" target="_blank">Repository <i class="fas fa-external-link-alt"></i></a>
+            <a class="btn btn-primary" href="https://github.com/isometrie/image-processing" target="_blank">Repository <i class="fas fa-external-link-alt"></i></a>
+            <a class="btn btn-dark mx-1" href="#anchor-hey">PDF on request <i class="fas fa-book"></i></a>
           </div>
         </div>
 
-        <div class="col-xl-8 col-lg-12 p-0">
-          <img class="float-right shadow" src="img/study/ips.jpg" alt="" />
+        <div class="col-xl-7 col-lg-12 p-0">
+          <img class="float-right shadow" src="img/image-processing/monitoring.png" alt="" />
         </div>
       </div>
     </div>
 
-    <!-- STACK INTRO -->
-    <div class="wrapper">
-      <div class="video-container">
-        <video playsinline autoplay muted loop poster="mp4/stack-poster.jpg">
-          <source src="mp4/stack_x264.mp4" type="video/mp4" />
-          Your browser does not support embedded video.
-        </video>
+    <!-- THE LAB -->
+    <div id="anchor-lab" class="container-fluid py-5">
+      <div class="row justify-content-center">
+        <div class="col-">
+          <div class="lab-head">The Lab</div>
+          <div class="lab-intro serif" style="color: #3700ff">
+            <p>The Lab is a collection of visual explorations in the field of <span>high-end-rendering</span> as used in <span>virtual</span> and <span>augmented reality</span>.</p>
+            <p>The collection spans a wide range of tasks such as modeling, texturing, lighting as well as scene building and animation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-between p-0 mt-5">
+        <div class="col-lg-6 col-12 p-0 pr-lg-2">
+          <div id="carouselLabLeft" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/lab/loop.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/lab/form.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/lab/structure.png" alt="" />
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/lab/glass.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-12 p-0 pl-lg-2">
+          <div id="carouselLabRight" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/lab/rgb.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/lab/glitch.jpg" alt="" />
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/lab/chrome.jpg" alt="" />
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/lab/seriell.jpg" alt="" />
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/lab/hair.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center pt-5">
+        <div class="col-">
+          <i class="fas fa-arrow-circle-down"></i>
+        </div>
       </div>
     </div>
+
+    <video class="video-stack" playsinline autoplay muted loop poster="mp4/stack.jpg">
+      <source src="mp4/stack.mp4" type="video/mp4" />
+      Your browser does not support embedded video.
+    </video>
 
     <div id="anchor-stack" class="container-fluid py-5">
-      <div class="row justify-content-center divider">
-        <div class="col-xl-6 col-lg-12 p-0">
-          <h1 class="pb-4">Stack</h1>
+      <div class="row justify-content-md-center" style="padding: 70px 0">
+        <div class="col-md-auto p-0">
+          <div class="stack-tags-web pt-3 stack-line-spacer">
+            <li>User Interface</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>Axure</li>
+            <li>Adobe CC</li>
+          </div>
 
-          <table class="stack">
-            <tr>
-              <td>User Interface</td>
-              <td class="stack-tags-web">
-                <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>Axure</li>
-                <li>Adobe CC</li>
-              </td>
-            </tr>
+          <div class="stack-tags-web stack-line-spacer">
+            <li>Frontend</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>SCSS</li>
+            <li>Bootstrap</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+          </div>
 
-            <tr>
-              <td>Frontend</td>
-              <td class="stack-tags-web">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>SCSS</li>
-                <li>Bootstrap</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-              </td>
-            </tr>
+          <div class="stack-tags-web stack-line-spacer">
+            <li>Design</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Cinema4D</li>
+            <li>V-Ray</li>
+          </div>
 
-            <tr>
-              <td>Assets</td>
-              <td class="stack-tags-web">
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Cinema4D</li>
-              </td>
-            </tr>
+          <div class="stack-tags-web stack-line-spacer">
+            <li>Backend</li>
+            <li>Python</li>
+            <li>SQLite</li>
+            <li>MongoDB</li>
+            <li>...</li>
+          </div>
 
-            <tr>
-              <td>Backend</td>
-              <td class="stack-tags-web">
-                <li>Python</li>
-                <li>SQLite</li>
-                <li>MongoDB</li>
-                <li>...</li>
-              </td>
-            </tr>
+          <div class="stack-tags-web stack-line-spacer">
+            <li>CI/CD</li>
+            <li>GIT</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+            <li>...</li>
+          </div>
 
-            <tr>
-              <td>CI/CD</td>
-              <td class="stack-tags-web">
-                <li>GIT</li>
-                <li>GitHub</li>
-                <li>Docker</li>
-                <li>...</li>
-              </td>
-            </tr>
+          <div class="stack-tags-web stack-line-spacer">
+            <li>PM</li>
+            <li>Trello</li>
+            <li>Slack</li>
+            <li>Zoom</li>
+            <li>Skype</li>
+          </div>
 
-            <tr>
-              <td>PM</td>
-              <td class="stack-tags-web">
-                <li>Trello</li>
-                <li>Slack</li>
-                <li>Zoom</li>
-                <li>Skype</li>
-              </td>
-            </tr>
-
-            <tr>
-              <td>Scientific</td>
-              <td class="stack-tags-science">
-                <li>Matlab</li>
-                <li>Simulink</li>
-                <li>Python</li>
-                <li>NumPy</li>
-                <li>OpenCV</li>
-              </td>
-            </tr>
-          </table>
+          <div class="stack-tags-web">
+            <li>Scientific</li>
+            <li>Matlab</li>
+            <li>Simulink</li>
+            <li>Python</li>
+            <li>NumPy</li>
+            <li>OpenCV</li>
+          </div>
         </div>
       </div>
     </div>
 
+    <div id="section-end">
+      <div class="serif">
+        You have reached the end. <br />Thanks for watching.
+        <br />
+        <a href="#anchor-hey">Get in touch</a>
+      </div>
+    </div>
+
+    <video class="finish" playsinline autoplay muted loop poster="mp4/displace.jpg">
+      <source src="mp4/displace.mp4" type="video/mp4" />
+      Your browser does not support embedded video.
+    </video>
+
     <div id="anchor-hey" class="container-fluid">
-      <div class="row justify-content-center" style="padding-top: 200px">
-        <div class="col-sm-10 col-md-6">
-          <div class="typewrite" data-period="1500" data-type='["Hey", "Nice to meet you.", "Get in touch" ]'>
+      <div class="row justify-content-center contact-spacer">
+        <div class="col-sm-10 col-md-8 col-lg-6">
+          <div class="typewrite" data-period="1500" data-type='["Hey.", "Nice to meet you."]'>
             <span class="wrap"></span>
           </div>
           <form action="https://formspree.io/f/mjvplgaz" method="POST">
@@ -395,7 +576,7 @@
             <input type="text" name="_replyto" />
             <label>Message</label>
             <textarea name="message"></textarea>
-            <button type="submit">Send <i class="fab fa-telegram-plane"></i></button>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>
@@ -405,9 +586,7 @@
 
     <script src="js/scroll.js"></script>
 
-    <script src="js/sayhi.js"></script>
-
-    <script src="js/intro.js"></script>
+    <script src="js/sayhello.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/aos.js"></script>
