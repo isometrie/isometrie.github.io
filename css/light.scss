@@ -96,9 +96,9 @@ video.video-stack {
   margin: 20vh 20vw;
   height: 60vh;
 
-  @include media-breakpoint-down(sm) {
-    width: 100vw;
-    margin: 0;
+  @include media-breakpoint-down(md) {
+    width: 90vw;
+    margin: 0 5vw;
     height: 60vh;
   }
 }
@@ -341,15 +341,12 @@ li {
 .stack-tags-web li:first-child {
   border-radius: 6px;
   color: var(--color-white);
-  background-color: var(--color-black);
+  background-color: var(--color-primary);
   display: inline-block;
   font-size: 16px;
-  margin: 0;
   font-weight: 400;
   padding: 5px 10px;
   white-space: nowrap;
-  width: 200px;
-  width: auto;
 
   @include media-breakpoint-down(md) {
     display: block;
@@ -365,10 +362,14 @@ li {
   }
 }
 
+.bg-black {
+  background-color: var(--color-black) !important;
+}
+
 .stack-tags-web li {
   color: var(--color-black);
   display: inline-block;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 200;
   padding: 0 20px;
   white-space: nowrap;
