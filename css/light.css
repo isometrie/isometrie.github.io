@@ -2,7 +2,7 @@
   --color-primary: #3700ff;
   --color-black: #000000;
   --color-secondary: #0a0025;
-  --color-text: #66636d;
+  --color-text: #949299;
   --color-light: #ededed;
   --color-white: #ffffff;
 }
@@ -102,7 +102,7 @@ video.video-stack {
   height: 60vh;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   video.video-stack {
     width: 90vw;
     margin: 0 5vw;
@@ -572,8 +572,6 @@ button[type="submit"] {
   font-size: 20px;
   border-radius: 6px;
   border: 3px solid transparent;
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   outline: none;
 }
 
@@ -803,4 +801,20 @@ tr td:first-child {
   transform: translate(0, -100px);
   border-radius: 50px;
 }*/
+#section-last {
+  background-color: var(--color-black);
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../mp4/infinity.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60% auto;
+}
+
+@media (max-width: 767.98px) {
+  #section-last {
+    width: 100vw;
+    height: 60vh;
+  }
+}
 /*# sourceMappingURL=light.css.map */
