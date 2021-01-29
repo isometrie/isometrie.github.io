@@ -521,6 +521,7 @@ button[type="submit"] {
 }
 
 input[type="text"] {
+  margin: 30px 0;
   width: 100%;
   padding: 12px;
   box-sizing: border-box;
@@ -539,6 +540,11 @@ textarea {
 button[type="submit"] {
   width: 100%;
   background-color: var(--color-primary);
+
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='50px' height='50px' viewBox='0 0 50 50' enable-background='new 0 0 50 50' xml:space='preserve'%3E%3Ccircle fill='%23FFFFFF' cx='25' cy='25' r='25'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0;
   border-radius: 6px;
   color: var(--color-white);
   font-weight: 500;
@@ -548,28 +554,22 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+button[type="submit"]:hover {
+  color: var(--color-primary);
+  background-size: 120%;
+  transition: background-size 0.8s ease;
+}
+
 input[type="text"]:focus,
-textarea:focus,
-button[type="submit"]:focus {
+textarea:focus {
   border: none;
   box-shadow: 0 -19px 38px rgba(0, 0, 0, 0.3);
   box-shadow: none;
   border: 3px solid var(--color-primary);
 }
 
-label {
-  color: var(--color-white);
-  margin: 40px 0 10px 0;
-  font-size: 20px;
-
-  @include media-breakpoint-down(sm) {
-    font-size: 16px;
-  }
-}
-
 #anchor-hey {
   background-color: var(--color-secondary);
-  background-image: url("../img/bg_secondary.jpg");
   background-repeat: repeat;
   height: 100vh;
 
@@ -585,28 +585,13 @@ label {
   @include media-breakpoint-down(sm) {
     font-size: 26px;
   }
-}
 
-table {
-  vertical-align: top;
-  font-size: 16px;
-  font-weight: 500;
-
-  @include media-breakpoint-down(sm) {
-    font-size: 16px;
-    font-weight: 500;
+  @include media-breakpoint-down(xs) {
+    font-size: 20px;
   }
 }
 
-tr th:first-child,
-tr td:first-child {
-  width: 8em;
-  min-width: 8em;
-  word-break: break-all;
-}
-
 .divider {
-  //border-top: 1px solid #d3d3d3;
   padding: 100px 0;
 
   @include media-breakpoint-down(sm) {
@@ -648,7 +633,7 @@ tr td:first-child {
   padding-top: 200px;
 
   @include media-breakpoint-down(sm) {
-    padding: 0;
+    padding-top: 50px;
   }
 }
 
@@ -700,30 +685,6 @@ tr td:first-child {
 
 .fa-comment-alt {
   color: var(--color-primary);
-}
-
-#section-last {
-  background-color: var(--color-secondary);
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../mp4/infinity.jpg"), url("../img/bg_secondary.jpg");
-  background-repeat: no-repeat, repeat;
-  background-position: center center;
-  background-size: 70% auto;
-
-  @include media-breakpoint-down(sm) {
-    width: 100vw;
-    height: 60vh;
-  }
-}
-
-#section-copy {
-  background-image: url("../img/bg_secondary.jpg");
-  background-repeat: repeat;
-  width: 100vw;
-  padding: 10px 0;
-  color: var(--color-primary);
-  text-align: center;
 }
 
 #carouselLabLeft,
