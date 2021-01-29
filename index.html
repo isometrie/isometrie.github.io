@@ -440,10 +440,6 @@
               <div class="carousel-item">
                 <img class="d-block w-100" src="img/lab/structure.png" alt="" />
               </div>
-
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/lab/neon.png" alt="" />
-              </div>
             </div>
           </div>
         </div>
@@ -457,9 +453,7 @@
               <div class="carousel-item">
                 <img class="d-block w-100" src="img/lab/glitch.jpg" alt="" />
               </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/lab/circles.png" alt="" />
-              </div>
+
               <div class="carousel-item">
                 <img class="d-block w-100" src="img/lab/chrome.jpg" alt="" />
               </div>
@@ -569,8 +563,8 @@
             <span class="wrap"></span>
           </div>
           <form action="https://formspree.io/f/mjvplgaz" method="POST">
-            <input type="text" name="_replyto" placeholder="E-Mail" />
-            <textarea name="message" placeholder="Message"></textarea>
+            <input type="text" name="_replyto" placeholder="E-Mail" class="activate-avatar" />
+            <textarea name="message" placeholder="Message" class="activate-avatar"></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
@@ -600,8 +594,8 @@
     ></script>
 
     <script>
-      $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
+      $(".activate-avatar").hover(function () {
+        $(".avatar").toggleClass("avatar-fade");
       });
     </script>
   </body>

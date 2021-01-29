@@ -742,7 +742,7 @@ textarea:focus {
   filter: hue-rotate(0deg);
 }
 
-.avatar:hover {
-  filter: hue-rotate(360deg);
-  transition: filter 5s ease;
+.avatar-fade {
+  filter: hue-rotate(70deg);
+  transition: filter 2s ease;
 }

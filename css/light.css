@@ -818,12 +818,12 @@ textarea:focus {
           filter: hue-rotate(0deg);
 }
 
-.avatar:hover {
-  -webkit-filter: hue-rotate(360deg);
-          filter: hue-rotate(360deg);
-  -webkit-transition: -webkit-filter 5s ease;
-  transition: -webkit-filter 5s ease;
-  transition: filter 5s ease;
-  transition: filter 5s ease, -webkit-filter 5s ease;
+.avatar-fade {
+  -webkit-filter: hue-rotate(70deg);
+          filter: hue-rotate(70deg);
+  -webkit-transition: -webkit-filter 2s ease;
+  transition: -webkit-filter 2s ease;
+  transition: filter 2s ease;
+  transition: filter 2s ease, -webkit-filter 2s ease;
 }
 /*# sourceMappingURL=light.css.map */
