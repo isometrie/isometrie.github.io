@@ -619,9 +619,13 @@ button[type="submit"]:hover {
   transition: background-size 0.8s ease;
 }
 
+input:hover,
+textarea:hover {
+  border: 3px solid var(--color-primary);
+}
+
 input[type="text"]:focus,
 textarea:focus {
-  border: none;
   -webkit-box-shadow: 0 -19px 38px rgba(0, 0, 0, 0.3);
           box-shadow: 0 -19px 38px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: none;
