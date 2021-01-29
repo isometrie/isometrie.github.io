@@ -29,10 +29,10 @@ body {
   font-size: 68px;
 
   @include media-breakpoint-down(md) {
-    font-size: 48px;
+    font-size: 42px;
   }
   @include media-breakpoint-down(sm) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -148,7 +148,7 @@ video.cloud {
 
   @include media-breakpoint-down(sm) {
     width: 100vw;
-    height: 50vh;
+    height: auto;
   }
 }
 
@@ -201,7 +201,7 @@ h3 {
     font-size: 14px;
     margin: 0;
     width: 100vw;
-    border-radius: none;
+    border-radius: 0;
     font-weight: 500;
   }
 }
@@ -345,11 +345,16 @@ li {
     border: none;
     padding: 0;
     font-weight: 500;
+    margin-top: 10px;
   }
 }
 
 .bg-black {
   background-color: var(--color-black) !important;
+
+  @include media-breakpoint-down(sm) {
+    background-color: transparent !important;
+  }
 }
 
 .stack-tags-web li {
@@ -370,6 +375,7 @@ li {
     border-radius: 6px;
     border: 1px solid var(--color-text);
     margin: 2px 0;
+    padding: 0 5px;
   }
 }
 
@@ -614,16 +620,6 @@ tr td:first-child {
   border-radius: 6px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  opacity: 1 !important;
-}
-
 .fa-arrow-alt-circle-left,
 .fa-arrow-alt-circle-right {
   font-size: 30px;
@@ -735,4 +731,32 @@ tr td:first-child {
   cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='50px' height='50px' viewBox='0 0 50 50' enable-background='new 0 0 50 50' xml:space='preserve'%3E%3Ccircle fill='%230A0025' cx='24.5' cy='24.5' r='15'/%3E%3Cg%3E%3Crect x='20' y='18.5' fill='%23FFFFFF' width='3' height='12'/%3E%3Crect x='26' y='18.499' fill='%23FFFFFF' width='3' height='12.001'/%3E%3C/g%3E%3C/svg%3E%0A")
       25 25,
     pointer;
+}
+
+.carousel-control-prev {
+  justify-content: flex-start !important;
+  opacity: 1 !important;
+}
+
+.carousel-control-next {
+  justify-content: flex-end !important;
+  opacity: 1 !important;
+}
+
+.carousel-control-prev-icon {
+  height: 40px;
+  width: 20px;
+  transform: translate(-10px, 0);
+
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='30px' height='40px' viewBox='0 0 30 40' enable-background='new 0 0 30 40' xml:space='preserve'%3E%3Crect x='4.5' y='-0.5' fill='%234200FF' width='20' height='40'/%3E%3Cpolygon fill='%23FFFFFF' points='18.5,28.572 18.5,10.428 9.426,19.501 '/%3E%3C/svg%3E%0A") !important;
+  background: no-repeat center center;
+}
+
+.carousel-control-next-icon {
+  height: 40px;
+  width: 20px;
+  transform: translate(10px, 0);
+
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='30px' height='40px' viewBox='0 0 30 40' enable-background='new 0 0 30 40' xml:space='preserve'%3E%3Crect x='4.5' y='-0.5' fill='%234200FF' width='20' height='40'/%3E%3Cpolygon fill='%23FFFFFF' points='10.5,28.572 10.5,10.428 19.574,19.501 '/%3E%3C/svg%3E%0A") !important;
+  background: no-repeat center center;
 }
