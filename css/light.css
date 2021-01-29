@@ -811,4 +811,19 @@ textarea:focus {
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='30px' height='40px' viewBox='0 0 30 40' enable-background='new 0 0 30 40' xml:space='preserve'%3E%3Crect x='4.5' y='-0.5' fill='%234200FF' width='20' height='40'/%3E%3Cpolygon fill='%23FFFFFF' points='10.5,28.572 10.5,10.428 19.574,19.501 '/%3E%3C/svg%3E%0A") !important;
   background: no-repeat center center;
 }
+
+.avatar {
+  padding-bottom: 30px;
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+}
+
+.avatar:hover {
+  -webkit-filter: hue-rotate(360deg);
+          filter: hue-rotate(360deg);
+  -webkit-transition: -webkit-filter 5s ease;
+  transition: -webkit-filter 5s ease;
+  transition: filter 5s ease;
+  transition: filter 5s ease, -webkit-filter 5s ease;
+}
 /*# sourceMappingURL=light.css.map */
