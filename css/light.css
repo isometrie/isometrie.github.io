@@ -635,8 +635,11 @@ textarea:focus {
 
 #anchor-hey {
   background-color: var(--color-secondary);
-  background-repeat: repeat;
   height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  place-items: center normal;
 }
 
 @media (max-width: 767.98px) {
@@ -702,16 +705,14 @@ textarea:focus {
   background-color: var(--color-black);
 }
 
+/*
 .contact-spacer {
   padding-top: 200px;
-}
 
-@media (max-width: 767.98px) {
-  .contact-spacer {
+  @include media-breakpoint-down(sm) {
     padding-top: 50px;
   }
-}
-
+}*/
 .thanks {
   font-size: 60px;
   color: var(--color-primary);
