@@ -602,7 +602,7 @@ textarea:focus {
 
 .typewrite {
   font-size: 52px;
-  color: var(--color-white);
+  color: var(--color-black);
 
   @include media-breakpoint-down(sm) {
     font-size: 26px;

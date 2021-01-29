@@ -664,7 +664,7 @@ textarea:focus {
 
 .typewrite {
   font-size: 52px;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 @media (max-width: 767.98px) {
