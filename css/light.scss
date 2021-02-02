@@ -269,6 +269,8 @@ article {
 
 #logo {
   display: inline;
+  // width: 100px;
+  // height: 50px;
 }
 
 #logo a {
@@ -991,6 +993,8 @@ anchor-lab .vertical-center {
 
 .brightness-box {
   position: sticky;
+  position: -webkit-sticky; /* Safari */
+
   top: 0;
   left: 0;
   display: inline-block;
@@ -1007,3 +1011,13 @@ anchor-lab .vertical-center {
   height: 4px;
   background-color: var(--color-white);
 }
+
+#svglogo {
+  display: inline-block;
+}
+
+/*
+#logo:hover + svg polyline {
+  stroke-width: 20;
+  transition: all 2s;
+}*/
