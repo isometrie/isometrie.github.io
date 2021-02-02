@@ -11,14 +11,7 @@
     <link rel="manifest" href="manifest.json" />
 
     <title>Digital product experiences</title>
-    <!--
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-  -->
+
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
 
     <script src="https://kit.fontawesome.com/9be16426d1.js" crossorigin="anonymous"></script>
@@ -64,8 +57,8 @@
     <div id="anchor-first" class="container-fluid py-5">
       <div class="row pb-5 justify-content-between">
         <div class="col-xl-6 col-lg-12 p-0">
-          <div id="carouselLanding" class="carousel slide" data-ride="carousel" data-interval="3000">
-            <div class="carousel-inner">
+          <div id="carouselLanding" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner btn-pause">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/landingpage/1.png" alt="" />
               </div>
@@ -168,7 +161,7 @@
       <div class="row justify-content-between divider">
         <div class="col-xl-7 col-lg-12 p-0">
           <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
-            <div class="carousel-inner">
+            <div class="carousel-inner btn-pause">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/location-map/1.jpg" alt="" />
               </div>
@@ -253,7 +246,7 @@
       <div class="row justify-content-between divider">
         <div class="col-xl-6 col-lg-12 p-0">
           <div id="sliderBB" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
-            <div class="carousel-inner">
+            <div class="carousel-inner btn-pause">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/blackbox/1.jpg" alt="" />
               </div>
@@ -343,7 +336,7 @@
     </div>
 
     <!-- CASE IMAGE PROCESSING -->
-    <div id="caseImageProcessing" class="container-fluid my-5 py-5">
+    <div id="caseImageProcessing" class="container-fluid py-5">
       <div class="row divider justify-content-between">
         <div class="col-xl-5 col-lg-12 p-0">
           <h2 class="text-fade">Research & Development</h2>
@@ -391,6 +384,11 @@
     </div>
 
     <div id="anchor-lab">
+      <div class="brightness-box">
+        <span class="progress-bar"></span>
+        <span class="brightness-scala">100</span>
+      </div>
+
       <div class="container-fluid">
         <div class="row justify-content-between">
           <div class="col-md-5 col-sm-7 my-auto">
@@ -401,7 +399,6 @@
               <p>The Lab is a collection of visual explorations in the field of <span>high-end-rendering</span> as used in <span>virtual</span> and <span>augmented reality</span>.</p>
               <p>The collection spans a wide range of tasks such as modeling, texturing, lighting as well as scene building and animation.</p>
             </article>
-            <span class="brightness">100</span>
           </div>
 
           <div class="col-md-5 col-sm-5">
@@ -410,13 +407,14 @@
         </div>
       </div>
     </div>
+    <a href="#anchor-lab-showcase"><div class="circle"></div></a>
 
     <div id="anchor-lab-showcase">
       <div class="container-fluid">
         <div class="row justify-content-between">
           <div class="col-xl-5 col-lg-12">
-            <div id="carouselLab" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">
-              <div class="carousel-inner">
+            <div id="carouselLab" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500">
+              <div class="carousel-inner btn-pause">
                 <div class="carousel-item active">
                   <img class="d-block w-100" src="img/lab/glitch-showcase.jpg" alt="" />
                 </div>
@@ -548,7 +546,7 @@
           <img class="avatar" src="img/avatar.gif" alt="avatar" />
 
           <div class="bubble-light">
-            <div class="typewrite" data-period="1500" data-type='["Hey.", "Nice to meet you.", "Get in touch."]'></div>
+            <div class="typewrite" data-period="1500" data-type='["git push orig", "hey.", "nice to meet you.", "get in touch", "(ɔ◔‿◔)ɔ"]'></div>
             <span class="wrap"></span>
           </div>
           <form action="https://formspree.io/f/mjvplgaz" method="POST">
@@ -610,15 +608,25 @@
         var brightness = labheight / 100;
 
         var brightnesslevel = Math.floor((labfromtop + labheight) / brightness);
+        var bb = document.querySelectorAll(".brightness-box")[0];
+
+        var bs = document.querySelectorAll(".brightness-scala")[0];
+        var pb = document.querySelectorAll(".progress-bar")[0];
+
+        var al = document.querySelector("#anchor-lab");
 
         //console.log("top", labfromtop, "height", labheight, "fac", fac);
+        bb.style.visibility = "hidden";
 
         //scroll down
         if (labfromtop <= 0) {
           gray = Math.floor((labfromtop + labheight) / fac);
-          //  console.log("sum", labfromtop + labheight, "grau", gray);
           var bg = document.querySelector("#anchor-lab");
-          bg.style.backgroundColor = "rgb(" + (gray - 5) + "," + (gray - 5) + "," + gray + ")";
+          bg.style.backgroundColor = "rgb(" + (gray - 2) + "," + (gray - 2) + "," + gray + ")";
+
+          if (gray < 0) {
+            bg.style.backgroundColor = "rgb(0, 0, 0)";
+          }
         }
 
         //scroll up
@@ -629,7 +637,14 @@
         }
 
         if (brightnesslevel <= 100 && brightnesslevel >= 0) {
-          document.querySelectorAll(".brightness")[0].innerHTML = brightnesslevel;
+          //show only when used
+          bb.style.visibility = "visible";
+
+          //show brightness as text string
+          bs.innerHTML = brightnesslevel + "%";
+
+          //progress-bar width from 100% to 0%
+          pb.style.width = brightnesslevel * 3 + "px";
         }
       });
     </script>
