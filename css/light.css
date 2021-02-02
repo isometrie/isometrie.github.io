@@ -22,14 +22,20 @@
 html {
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
 }
 
 body {
+  margin: 0;
   color: var(--color-black) !important;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 300;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 a {
@@ -101,22 +107,30 @@ span.hello {
 
 #section-end {
   margin: 20vh 10vw;
-  height: 60vh;
-  width: 80vw;
+  min-height: 60vh;
   z-index: 1;
   position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  #section-end {
+    margin: 0;
+  }
 }
 
 video.finish {
-  width: 100vw;
-  margin: 0;
-  height: 90vh;
+  width: 50vw;
+  margin: 0 25vw;
 }
 
 @media (max-width: 767.98px) {
   video.finish {
-    width: 100vw;
-    height: 60vh;
+    min-height: auto;
   }
 }
 
@@ -202,16 +216,37 @@ h1 {
   font-weight: 300;
 }
 
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
 h2 {
   padding-top: 20px;
   font-size: 21px;
   color: var(--color-dark);
 }
 
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
 h3 {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 20px;
+}
+
+@media (max-width: 767.98px) {
+  h3 {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 article {
@@ -236,8 +271,7 @@ article {
   margin: 0 10vw;
   margin-top: 20px;
   width: 80vw;
-  padding: 15px;
-  padding-right: 10px;
+  padding: 15px 10px 15px 20px;
   position: fixed;
   background-color: var(--color-white);
   color: var(--color-black);
@@ -332,6 +366,12 @@ li {
   white-space: nowrap;
 }
 
+@media (max-width: 575.98px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
 /*
 #navbar a {
   padding: 5px 10px;
@@ -391,6 +431,12 @@ li {
   text-decoration: none;
   white-space: nowrap;
   margin: 0 5px 10px 0;
+}
+
+@media (max-width: 575.98px) {
+  .tags li {
+    font-size: 14px;
+  }
 }
 
 .tags-dark li {
@@ -692,7 +738,7 @@ textarea:focus {
 
 #anchor-hey {
   background-color: var(--color-primary-dark);
-  height: 100vh;
+  height: 95vh;
   display: -ms-grid;
   display: grid;
   margin: 0;
@@ -753,7 +799,7 @@ textarea:focus {
 }
 
 .info {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--color-black);
 }
 
@@ -844,6 +890,12 @@ textarea:focus {
   background-color: var(--color-white);
 }
 
+@media (max-width: 575.98px) {
+  .carousel-control-prev-icon {
+    display: none;
+  }
+}
+
 .carousel-control-next-icon {
   background-image: none;
   height: 50px;
@@ -855,6 +907,12 @@ textarea:focus {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='right' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='50px' height='50px' viewBox='0 0 50 50' enable-background='new 0 0 50 50' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M22.279,31.707c-0.393-0.391-0.393-1.025,0-1.416l0,0l5.292-5.292l-5.292-5.292c-0.391-0.391-0.391-1.023,0-1.414l0,0 c0.39-0.392,1.023-0.392,1.413-0.002l0,0l6.71,6.706l-6.707,6.71C23.499,31.902,23.242,32,22.986,32l0,0 C22.73,32,22.474,31.902,22.279,31.707L22.279,31.707z'/%3E%3C/g%3E%3C/svg%3E%0A") !important;
   background-color: var(--color-white);
+}
+
+@media (max-width: 575.98px) {
+  .carousel-control-next-icon {
+    display: none;
+  }
 }
 
 .avatar {
@@ -897,7 +955,7 @@ textarea:focus {
 
 #anchor-section-lp {
   background-color: var(--color-light);
-  height: 100vh;
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
@@ -933,6 +991,13 @@ textarea:focus {
           transform: translate(0, 25px);
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='50px' height='50px' viewBox='0 0 50 50' enable-background='new 0 0 50 50' xml:space='preserve'%3E%3Cline fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' x1='25' y1='14.969' x2='25' y2='35.031'/%3E%3Cpolyline fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' points='32.295,27.737 25,35.031 17.705,27.737 '/%3E%3C/svg%3E%0A");
   background-position: center;
+  background-size: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .circle {
+    display: none;
+  }
 }
 
 .circle:hover {
@@ -958,14 +1023,8 @@ textarea:focus {
   border: 1px solid transparent;
 }
 
-.carousel-fade .carousel-item {
-  opacity: 1;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-}
-
 #anchor-lab {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #anchor-lab img {
@@ -977,6 +1036,13 @@ textarea:focus {
   font-weight: 300;
 }
 
+@media (max-width: 991.98px) {
+  .lab-headline {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
 anchor-lab .vertical-center {
   display: -ms-grid;
   display: grid;
@@ -986,7 +1052,7 @@ anchor-lab .vertical-center {
 
 #anchor-lab-showcase {
   background-color: var(--color-black);
-  height: 100vh;
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
@@ -1017,19 +1083,22 @@ anchor-lab .vertical-center {
   font-size: 24px;
 }
 
+@media (max-width: 767.98px) {
+  #anchor-lab article {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
 .brightness {
   color: var(--color-primary);
   font-weight: 600;
   margin-top: 20px;
 }
 
-/*
-svg polyline {
-  stroke-width: 40;
+#footer {
+  text-align: center;
+  height: 5vh;
+  background-color: var(--color-primary-dark);
 }
-
-#svglogo:hover + svg polyline {
-  stroke-width: 10;
-  transition: all 2s ease;
-}*/
 /*# sourceMappingURL=light.css.map */
