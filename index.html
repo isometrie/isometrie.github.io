@@ -34,14 +34,14 @@
               <svg id="svglogo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="30px" viewBox="0 0 620 280">
                 <polyline
                   fill="none"
-                  stroke="#000000"
-                  stroke-width="80"
+                  stroke="#3700ff"
+                  stroke-width="105"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   points="230,210 310,70 
                 390,210 470,70 550,210 "
                 />
-                <line fill="none" stroke="#000000" stroke-width="80" stroke-linecap="round" stroke-linejoin="round" x1="70" y1="210" x2="150" y2="70" />
+                <line fill="none" stroke="#3700ff" stroke-width="105" stroke-linecap="round" stroke-linejoin="round" x1="70" y1="210" x2="150" y2="70" />
               </svg>
             </a>
           </div>
@@ -51,7 +51,10 @@
               <li><a href="#anchor-first">Cases</a></li>
               <li><a href="#anchor-lab">Lab</a></li>
               <li><a href="#anchor-stack">Stack</a></li>
-              <li><a href="#anchor-hey" class="sayhello">Hello</a> <i class="fas fa-comment-alt"></i></li>
+              <li>
+                <a href="#anchor-hey" class="sayhello">Hello</a
+                ><!-- <i class="fas fa-comment-alt"></i>-->
+              </li>
             </ul>
           </div>
         </nav>
@@ -300,7 +303,7 @@
           </div>
 
           <div class="py-4">
-            <a class="btn btn-dark" href="#anchor-hey">PDF on request <i class="fas fa-book"></i></a>
+            <a class="btn btn-dark" href="#anchor-hey" onclick="setText('blackbox testing')">PDF on request <i class="fas fa-book"></i></a>
           </div>
         </div>
       </div>
@@ -386,7 +389,7 @@
 
           <div class="py-4">
             <a class="btn btn-prime mr-1 mb-1" href="https://github.com/isometrie/image-processing" target="_blank">Repository <i class="fas fa-external-link-alt"></i></a>
-            <a class="btn btn-dark mb-1" href="#anchor-hey">PDF on request <i class="fas fa-book"></i></a>
+            <a class="btn btn-dark mb-1" href="#anchor-hey" onclick="setText('image processing')">PDF on request <i class="fas fa-book"></i></a>
           </div>
         </div>
 
@@ -454,16 +457,13 @@
                   <img class="d-block w-100" src="img/lab/structure.png" alt="" />
                 </div>
 
+                <!--
                 <div class="carousel-item">
                   <img class="d-block w-100" src="img/lab/hair.jpg" alt="" />
                 </div>
-
+-->
                 <div class="carousel-item">
                   <img class="d-block w-100" src="img/lab/octapods.jpg" alt="" />
-                </div>
-
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/lab/braun-tp1.jpg" alt="" />
                 </div>
               </div>
             </div>
@@ -577,8 +577,8 @@
             <span class="wrap"></span>
           </div>
           <form action="https://formspree.io/f/mjvplgaz" method="POST">
-            <input type="text" name="_replyto" placeholder="E-Mail" class="activate-avatar" />
-            <textarea name="message" placeholder="Message" class="activate-avatar"></textarea>
+            <input type="text" name="_replyto" placeholder="E-Mail" autocorrect="off" spellcheck="false" autocomplete="off" />
+            <textarea name="message" placeholder="Message" id="text-message" autocorrect="off" spellcheck="false"></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
@@ -674,6 +674,13 @@
           pb.style.width = brightnesslevel * 3 + "px";
         }
       });
+    </script>
+
+    <script>
+      function setText(requestselect) {
+        var emailtemplate = "Hey,\nplease send me the documentation of the " + requestselect + " that you mentioned above.\n\nThanks you";
+        document.getElementById("text-message").value = emailtemplate;
+      }
     </script>
   </body>
 </html>
