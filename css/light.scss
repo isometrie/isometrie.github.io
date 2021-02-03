@@ -554,7 +554,7 @@ li {
 .bubble {
   position: relative;
   background-color: var(--color-white);
-  padding: 20px;
+  padding: 10px;
   border-radius: 6px;
   width: 80%;
 }
@@ -660,7 +660,8 @@ textarea:focus {
 }
 
 .typewrite {
-  font-size: 52px;
+  font-size: 48px;
+  font-weight: 400;
   color: var(--color-black);
 
   @include media-breakpoint-down(sm) {
@@ -1016,5 +1017,5 @@ anchor-lab .vertical-center {
 .footer-adress {
   color: var(--color-primary);
   font-weight: 500;
-  padding: 30px 0;
+  padding-bottom: 50px;
 }
