@@ -552,12 +552,16 @@ li {
   font-weight: 200 !important;
 }
 
+.fas.fa-map-marker-alt,
 .far.fa-check-circle,
 .far.fa-dot-circle {
   padding-right: 10px;
   color: var(--color-primary);
-  color: var(--color-text);
-  color: var(--color-primary-soft);
+}
+
+.fas.fa-dot-circle {
+  color: #55c1ff;
+  padding-right: 5px;
 }
 
 #anchor-first img,
@@ -1134,5 +1138,15 @@ anchor-lab .vertical-center {
   color: var(--color-primary);
   font-weight: 500;
   padding-bottom: 50px;
+}
+
+.legend {
+  font-size: 16px;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+#caseBerlin0 .fa-dot-circle {
+  color: #55c1ff;
 }
 /*# sourceMappingURL=light.css.map */
