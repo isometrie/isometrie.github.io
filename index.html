@@ -26,34 +26,36 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <div id="anchor-top">
-        <nav id="navigation">
-          <div id="logo">
-            <a href="#anchor-top"><img src="svg/isometrie-logo-primary.svg" height="20" /></a>
-          </div>
+    <div id="anchor-top" class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav id="navigation">
+            <div id="logo">
+              <a href="#anchor-top"><img src="svg/isometrie-logo-primary.svg" /></a>
+            </div>
 
-          <div id="navbar" class="float-right">
-            <ul>
-              <li><a href="#anchor-first">Cases</a></li>
-              <li><a href="#anchor-lab">Lab</a></li>
-              <li><a href="#anchor-stack">Stack</a></li>
-              <li>
-                <a href="#anchor-hey" class="sayhello">Hello</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+            <div id="navbar" class="float-right">
+              <ul>
+                <li><a href="#anchor-first">Cases</a></li>
+                <li><a href="#anchor-lab">Lab</a></li>
+                <li><a href="#anchor-stack">Stack</a></li>
+                <li><a href="#anchor-hey" class="sayhello">Hello</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="intro-headline">
+          <span class="header text-fade">Design and technology that powers digital product design and user experiences.</span>
+          <span class="sub">Working as a software developer, educated in design and engineering.</span>
+          <a href="#anchor-first"><span class="btn-circle-header"></span></a>
+        </div>
+
+        <video class="cloud" playsinline autoplay muted loop poster="mp4/displace.jpg">
+          <source src="mp4/displace.mp4" type="video/mp4" />
+          Your browser does not support embedded video.
+        </video>
       </div>
-
-      <div class="about serif">
-        <span>Design</span> and <span>technology</span> that powers digital product design and user experiences. Working as a software developer, educated in both, design and engineering.
-      </div>
-
-      <video class="cloud" playsinline autoplay muted loop poster="mp4/cloud.jpg">
-        <source src="mp4/cloud.mp4" type="video/mp4" />
-        Your browser does not support embedded video.
-      </video>
     </div>
 
     <div id="anchor-first" class="container-fluid py-5">
@@ -522,6 +524,13 @@
       <div class="row justify-content-md-center py-5">
         <div class="col-md-auto p-0">
           <div class="pt-3 stack-tags-web stack-line-spacer">
+            <li>Basics</li>
+            <li>Microsoft Office</li>
+            <li>Windows (PowerShell)</li>
+            <li>macOS (bash/zsh)</li>
+          </div>
+
+          <div class="pt-3 stack-tags-web stack-line-spacer">
             <li>PM</li>
             <li>Scrum</li>
             <li>Trello</li>
@@ -581,56 +590,57 @@
       </div>
     </div>
 
-    <div id="section-end">
-      <div class="serif">
-        You have reached the end. <br />Thanks for watching.
-        <br />
-        <a href="#anchor-hey">Get in touch</a>
+    <!-- SECTION CONTACT TEASER -->
+    <div id="section-end" class="container-fluid">
+      <div class="row">
+        <div class="col">You have reached the end. Thanks for watching.<a href="#anchor-hey"> Get in touch.</a></div>
       </div>
     </div>
 
-    <video class="finish" playsinline autoplay muted loop poster="mp4/displace.jpg">
-      <source src="mp4/displace.mp4" type="video/mp4" />
-      Your browser does not support embedded video.
-    </video>
+    <div id="section-logo" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8" style="background-color: var(--color-dark)"></div>
+        <div class="col-lg-4 p-4 pl-5" style="background-color: var(--color-primary)">
+          <img src="svg/isometrie-logo-white.svg" width="50" />
+        </div>
+      </div>
+    </div>
 
+    <!-- SECTION CONTACT FORM -->
     <div id="anchor-hey" class="container-fluid">
       <div class="row h-100">
-        <div class="col-lg-7 section-hey-left pt-5">
+        <div class="col-lg-8 section-hey-left pt-5">
           <img class="avatar" src="img/avatar.gif" alt="avatar" />
 
           <div class="bubble">
-            <div class="typewrite" data-period="1500" data-type='["git push orig", "hey.", "nice to meet you.", "get in touch.", "\\(^o^)/"]'></div>
+            <div class="typewrite" data-period="1500" data-type='["git push orig", "hey.", "nice to meet you.", "get in touch /(^o^)/"]'></div>
             <span class="wrap"></span>
           </div>
           <form action="https://formspree.io/f/mjvplgaz" method="POST">
             <input type="text" name="_replyto" placeholder="E-Mail" autocorrect="off" spellcheck="false" autocomplete="off" />
-            <textarea name="message" placeholder="Message" id="text-message" autocorrect="off" spellcheck="false"></textarea>
-            <button type="submit">Send</button>
+            <textarea name="message" placeholder="Message" id="text-message" autocorrect="off" spellcheck="false" rows="6"></textarea>
+            <button type="submit">Send E-Mail</button>
           </form>
         </div>
 
-        <div class="col-lg-5 p-5 section-hey-right">
-          <img src="svg/isometrie-logo-primary.svg" width="60" />
+        <div class="col-lg-4 p-5 section-hey-right">
+          <div class="footer-about pt-2">
+            Driven by continuous improvement, Isometrie is a showcase documenting work, progress and improvement.
+            <p>The focus is on web development, as well as creative technologies like augmented and virtual reality.</p>
+          </div>
 
           <div>
-            <div class="footer-adress"><i class="fas fa-map-marker"></i> Hannover, Germany</div>
-            <ul>
-              <li><a href="#anchor-first">Cases</a></li>
-              <li><a href="#anchor-lab">Lab</a></li>
-              <li><a href="#anchor-stack">Stack</a></li>
-              <li><a href="#anchor-hey">Hello</a></li>
-            </ul>
+            <li><a href="#anchor-first">Cases</a></li>
+            <li><a href="#anchor-lab">Lab</a></li>
+            <li><a href="#anchor-stack">Stack</a></li>
+            <li><a href="#anchor-hey">Hello</a></li>
+
+            <div class="footer-adress"><i class="fas fa-map-marker-alt"></i>Hannover, Germany</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!--
-    <div id="footer">
-      <a href="#anchor-top"> <img src="svg/isometrie-logo-white.svg" height="20" /></a>
-    </div>
--->
     <script src="js/jquery.slim.min.js"></script>
 
     <script src="js/interaction.js"></script>
