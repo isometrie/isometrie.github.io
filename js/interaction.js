@@ -61,3 +61,6 @@ function setText(requestselect) {
   var emailtemplate = "Hey,\nplease send me the documentation of the " + requestselect + " that you mentioned above.\n\nThanks you";
   document.getElementById("text-message").value = emailtemplate;
 }
+
+const soap = String.fromCodePoint(0x1f9fc);
+console.log("%ccleaning this up " + soap, "color: DodgerBlue; font-size:20px; padding:20px; background-color: Gainsboro;");
