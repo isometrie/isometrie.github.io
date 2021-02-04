@@ -513,7 +513,6 @@ li {
 }
 
 #caseSCB,
-#caseMap,
 #caseThesis,
 #caseImageProcessing {
   background-color: var(--color-light);
@@ -984,8 +983,6 @@ anchor-lab .vertical-center {
 }
 
 .brightness-box {
-  // position: sticky;
-  // position: -webkit-sticky; /* Safari */
   position: fixed;
   top: 0;
   left: 0;
@@ -1041,13 +1038,26 @@ anchor-lab .vertical-center {
   }
 }
 
+.section-hey-right li a {
+  padding: 20px 0;
+}
+
+.section-hey-right li a:hover {
+  padding-left: 15px;
+  transition: all 0.2s ease;
+}
+
 .footer-about {
   color: var(--color-text);
+  color: #b0b3b8;
+
   font-size: 28px;
   font-weight: 200;
 }
 
 .footer-about p {
+  color: #b0b3b8;
+
   padding: 20px 0;
   font-weight: 200;
 }

@@ -570,7 +570,6 @@ li {
 }
 
 #caseSCB,
-#caseMap,
 #caseThesis,
 #caseImageProcessing {
   background-color: var(--color-light);
@@ -1164,13 +1163,25 @@ anchor-lab .vertical-center {
   }
 }
 
+.section-hey-right li a {
+  padding: 20px 0;
+}
+
+.section-hey-right li a:hover {
+  padding-left: 15px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 .footer-about {
   color: var(--color-text);
+  color: #b0b3b8;
   font-size: 28px;
   font-weight: 200;
 }
 
 .footer-about p {
+  color: #b0b3b8;
   padding: 20px 0;
   font-weight: 200;
 }
