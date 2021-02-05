@@ -633,6 +633,7 @@ button[type="submit"] {
 }
 
 input[type="text"] {
+  border-radius: 0;
   margin: 30px 0;
   width: 80%;
   padding: 12px;
@@ -930,8 +931,11 @@ textarea:focus {
   -webkit-text-fill-color: transparent;
 }
 
-#anchor-section-lp {
+#caseMap {
   background-color: var(--color-light);
+}
+
+#anchor-section-lp {
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
