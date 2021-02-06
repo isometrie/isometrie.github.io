@@ -442,11 +442,11 @@
                 </div>
 
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="img/lab/logo-violet.png" />
+                  <img class="d-block w-100" src="img/lab/logo-hair.png" />
                 </div>
 
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="img/lab/glitch-intro.jpg" />
+                  <img class="d-block w-100" src="img/lab/logo-violet.png" />
                 </div>
               </div>
             </div>
@@ -463,7 +463,11 @@
             <div id="carouselLab" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500">
               <div class="carousel-inner btn-pause">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="img/lab/glitch-showcase.jpg" />
+                  <img class="d-block w-100" src="img/lab/structure.png" />
+                </div>
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/lab/glitch.png" />
                 </div>
 
                 <div class="carousel-item">
@@ -472,10 +476,6 @@
 
                 <div class="carousel-item">
                   <img class="d-block w-100" src="img/lab/fluid.png" />
-                </div>
-
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/lab/structure.png" />
                 </div>
 
                 <div class="carousel-item">
@@ -519,17 +519,58 @@
       </div>
     </div>
 
+    <!-- STACK INTRO -->
+    <div id="anchor-stack-intro" class="container-fluid">
+      <div class="row justify-content-around">
+        <div class="col-5 my-auto">
+          <h1 class="headline-stack-intro">Design and Technology</h1>
+          <h2 class="text-fade">Introduction</h2>
+
+          <article>
+            With a deep engineering and design background, my thinking is analytical, creative and empathetic. Through interest, motivation, mentors, and technical challenges, I've been able to learn
+            a variety of tools over the years.
+            <p>These days, it's fantastic to see how the lines between these disciplines are blurring.</p>
+          </article>
+        </div>
+
+        <div class="col-6 my-auto">
+          <video class="mx-auto d-block" playsinline autoplay muted loop poster="mp4/stack_morphism.png" width="100%">
+            <source src="mp4/stack_morphism.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+        </div>
+      </div>
+
+      <div class="row justify-content-around">
+        <div class="col-6 my-auto">
+          <video class="mx-auto d-block" playsinline autoplay muted loop poster="mp4/stack_helix.png" width="100%">
+            <source src="mp4/stack_helix.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+        </div>
+
+        <div class="col-5 my-auto">
+          <img src="svg/camera.svg" width="50" />
+          <h2 class="text-fade">Creative technologies</h2>
+          <article>
+            Design and technology that powers digital product design and user experiences.
+            <p>Software developer, educated in design and engineering.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
     <div id="anchor-stack" class="container-fluid py-5">
       <div class="row justify-content-md-center py-5">
         <div class="col-md-auto p-0">
-          <div class="pt-3 stack-tags-web stack-line-spacer">
+          <div class="stack-tags-web stack-line-spacer">
             <li>Basics</li>
             <li>Microsoft Office</li>
             <li>Windows (PowerShell)</li>
             <li>macOS (bash/zsh)</li>
           </div>
 
-          <div class="pt-3 stack-tags-web stack-line-spacer">
+          <div class="stack-tags-web stack-line-spacer">
             <li>PM</li>
             <li>Scrum</li>
             <li>Trello</li>
@@ -609,7 +650,7 @@
     <div id="anchor-hey" class="container-fluid">
       <div class="row h-100">
         <div class="col-lg-8 section-hey-left pt-5">
-          <img class="avatar" src="img/avatar.gif" alt="avatar" />
+          <img class="avatar" src="img/avatar.gif" alt="avatar" data-toggle="tooltip" data-placement="top" title="Hey, how are you?" />
 
           <div class="bubble">
             <div class="typewrite" data-period="1500" data-type='["git push orig", "hey.", "nice to meet you.", "get in touch /(^o^)/"]'></div>
@@ -665,5 +706,11 @@
     <script src="js/popper.min.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
