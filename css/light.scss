@@ -12,7 +12,7 @@
   --color-light: #eeeeee;
   --color-middle: #dadce0;
   --color-text: #5f6368;
-  --color-dark: #191b1f;
+  --color-dark: #17191e;
   --color-black: #000000;
 }
 
@@ -1078,9 +1078,9 @@ anchor-lab .vertical-center {
 }
 
 #last {
-  min-height: 75vh;
-  font-size: 20px;
-  background-color: var(--color-primary);
+  min-height: 60vh;
+  font-size: 16px;
+  background-color: var(--color-dark);
   color: var(--color-white);
   display: grid;
 }
@@ -1090,15 +1090,16 @@ anchor-lab .vertical-center {
 }
 
 #last li a:hover {
-  color: var(--color-black) !important;
+  color: var(--color-primary-soft) !important;
   padding-left: 15px;
   transition: all 0.2s ease;
 }
 
 .copyright {
-  color: var(--color-primary-dark);
+  color: var(--color-text);
   align-self: flex-end;
   font-weight: 400;
+  font-size: 14px;
 }
 
 #anchor-stack h1 {
@@ -1129,6 +1130,11 @@ anchor-lab .vertical-center {
   margin: 5px 0 0 0;
 }
 
+#last .head {
+  color: var(--color-text);
+  display: block;
+}
+
 .anchor-stack-skills {
   font-size: 20px;
   color: var(--color-text);
@@ -1142,8 +1148,6 @@ anchor-lab .vertical-center {
 
 /*
 #anchor-stack .col:hover {
-  background-color: var(--color-middle) !important;
-  transform: scale(1.1);
+  background-color: var(--color-black) !important;
   transition: all 0.3s ease;
-  z-index: 999;
 }*/
