@@ -64,3 +64,12 @@ function setText(requestselect) {
 
 const soap = String.fromCodePoint(0x1f9fc);
 console.log("%ccleaning this up " + soap, "color: DodgerBlue; font-size:20px; padding:20px; background-color: Gainsboro;");
+
+function today(unix_timestamp) {
+  var getToday = new Date(unix_timestamp * 1000).toLocaleDateString("de-DE");
+  document.getElementsByClassName("today")[0].innerHTML = getToday;
+}
+
+fetch("https://worldtimeapi.org/api/timezone/Europe/Berlin")
+  .then((response) => response.json())
+  .then((data) => today(data.unixtime));
