@@ -62,8 +62,6 @@ a:hover {
 .container-fluid {
   padding: 0 10vw;
 
-  // background-color: var(--color-white);
-
   @include media-breakpoint-down(sm) {
     padding: 0 30px;
   }
@@ -102,7 +100,6 @@ span.hello {
 video.finish {
   width: 50vw;
   margin: 0 25vw;
-  // min-height: 100vh;
 
   @include media-breakpoint-down(sm) {
     min-height: auto;
@@ -152,7 +149,6 @@ video.cloud {
 }
 
 p {
-  // color: var(--color-text);
   margin: 0;
   padding-top: 10px;
   font-weight: 300;
@@ -209,7 +205,6 @@ article {
 #navigation {
   font-size: 18px;
   font-weight: 400;
-  // margin: 0 10vw;
   margin-top: 20px;
   width: 80vw;
   padding: 15px 10px 15px 20px;
@@ -223,7 +218,6 @@ article {
   @include media-breakpoint-down(sm) {
     font-size: 14px;
     margin: 0;
-    //width: 100vw;
     border-radius: 0;
     font-weight: 500;
   }
@@ -294,7 +288,7 @@ li {
 }
 
 .btn {
-  border-radius: 4px;
+  border-radius: 25px;
   display: inline-block;
   cursor: pointer;
   font-size: 16px;
@@ -349,17 +343,18 @@ li {
 }
 
 .tags li {
-  background-color: #cfcaff;
   background-color: #dfdcff;
 
   color: var(--color-primary);
   border-radius: 4px;
+  border-radius: 30px;
+
   display: inline-block;
   font-size: 16px;
-  padding: 5px 10px;
+  padding: 5px 12px;
   text-decoration: none;
   white-space: nowrap;
-  margin: 0 5px 10px 0;
+  margin-top: 8px;
 
   @include media-breakpoint-down(xs) {
     font-size: 14px;
@@ -448,7 +443,7 @@ li {
 
 .bubble {
   position: relative;
-  background-color: var(--color-white);
+  background-color: var(--color-middle);
   padding: 10px 15px;
   width: 80%;
 }
@@ -462,7 +457,7 @@ li {
   left: 1.5em; // offset should move with padding of parent
   border: 0.75rem solid transparent;
   border-top: none;
-  border-bottom-color: var(--color-white);
+  border-bottom-color: var(--color-middle);
 }
 
 .shadow {
@@ -473,7 +468,7 @@ input[type="text"],
 textarea,
 button[type="submit"] {
   font-size: 20px;
-  border: 2px solid transparent;
+  border: 1px solid var(--color-middle);
   outline: none;
 
   @include media-breakpoint-down(sm) {
@@ -487,14 +482,19 @@ input[type="text"] {
   width: 80%;
   padding: 12px;
   box-sizing: border-box;
-  background-color: var(--color-white);
 }
 
 textarea {
+  border-radius: 0;
   width: 80%;
   padding: 12px;
   box-sizing: border-box;
   resize: none;
+}
+
+.type {
+  border-bottom: 1px solid var(--color-middle);
+  width: 80%;
 }
 
 button[type="submit"] {
@@ -519,13 +519,15 @@ button[type="submit"]:hover {
 
 input:hover,
 textarea:hover {
-  border: 2px solid #c0c3c9;
+  border: 1px solid var(--color-text);
+  //background-color: var(--color-white);
 }
 
 input[type="text"]:focus,
 textarea:focus {
-  border: 2px solid var(--color-primary-soft);
-  outline: 2px solid #b0a8ff;
+  border: 1px solid var(--color-primary-soft);
+  outline: 3px solid #b0a8ff;
+  background-color: var(--color-white);
 }
 
 #anchor-top {
@@ -607,7 +609,6 @@ textarea:focus {
   margin: 0;
   padding: 0;
   background-color: var(--color-white);
-  //min-height: 100vh;
 
   @include media-breakpoint-down(sm) {
     height: auto;
@@ -716,13 +717,12 @@ textarea:focus {
 }
 
 .avatar {
-  margin: 0 0 30px 5px;
   width: 60px;
   height: 60px;
 }
 
 .text-fade {
-  background: linear-gradient(to right, #3700ff, #6300b4, #55c1ff, #3700ff);
+  background: linear-gradient(to right, #3700ff, #55c1ff, #3700ff);
   background-size: 200%;
   color: var(--color-primary);
   background-clip: text;
@@ -749,7 +749,6 @@ textarea:focus {
 }
 
 #anchor-section-lp {
-  //background-color: var(--color-light);
   min-height: 100vh;
   display: grid;
   align-content: center;
@@ -942,7 +941,6 @@ anchor-lab .vertical-center {
 }
 
 .section-hey-left {
-  background-color: var(--color-middle);
   padding-left: 10vw;
 
   @include media-breakpoint-down(sm) {
@@ -951,7 +949,6 @@ anchor-lab .vertical-center {
 }
 
 .section-hey-right {
-  background-color: var(--color-middle);
   color: var(--color-dark);
   padding-right: 10vw;
 
@@ -1018,12 +1015,10 @@ anchor-lab .vertical-center {
   transform: translate(0, -50%);
 
   @include media-breakpoint-down(sm) {
-    //width: 90vw;
     font-size: 30px;
   }
 
   @include media-breakpoint-down(xs) {
-    //margin: 15vh 5vw;
     font-size: 20px;
   }
 }
@@ -1097,9 +1092,8 @@ anchor-lab .vertical-center {
 
 .copyright {
   color: var(--color-text);
-  align-self: flex-end;
-  font-weight: 400;
-  font-size: 14px;
+  //font-weight: 400;
+  font-size: 12px;
 }
 
 #anchor-stack h1 {
@@ -1118,16 +1112,20 @@ anchor-lab .vertical-center {
 }
 
 .stack-tags-web li {
+  background-color: var(--color-light);
   color: var(--color-black);
-  border: var(--color-middle) 1px solid;
-  border-radius: 4px;
+  border-radius: 30px;
 
   display: inline-block;
   font-size: 16px;
   font-weight: 400;
-  padding: 5px 10px;
+  padding: 5px 12px;
   white-space: nowrap;
-  margin: 5px 0 0 0;
+  margin-top: 8px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 14px;
+  }
 }
 
 #last .head {
@@ -1145,9 +1143,3 @@ anchor-lab .vertical-center {
   padding-bottom: 2px;
   border-bottom: 1px solid var(--color-middle);
 }
-
-/*
-#anchor-stack .col:hover {
-  background-color: var(--color-black) !important;
-  transition: all 0.3s ease;
-}*/
