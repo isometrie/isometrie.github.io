@@ -1096,21 +1096,6 @@ anchor-lab .vertical-center {
   font-size: 12px;
 }
 
-#anchor-stack h1 {
-  font-size: 60px;
-  font-weight: 300;
-}
-
-#anchor-stack h2 {
-  font-size: 22px;
-  font-weight: 400;
-}
-
-#anchor-stack article {
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .stack-tags-web li {
   background-color: var(--color-light);
   color: var(--color-black);
@@ -1138,7 +1123,7 @@ anchor-lab .vertical-center {
   color: var(--color-text);
 }
 
-.anchor-stack-skills u {
+u {
   text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 1px solid var(--color-middle);
