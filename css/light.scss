@@ -138,9 +138,16 @@ video {
 }
 
 video.cloud {
-  width: 100vw;
-  margin: 10vh 0;
-  height: 90vh;
+  position: absolute;
+  width: 50vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  //  margin: 5vh 20vw;
+  //width: 20vw;
+  // height: 90vh;
+  //margin: auto auto;
 
   @include media-breakpoint-down(sm) {
     width: 100vw;
