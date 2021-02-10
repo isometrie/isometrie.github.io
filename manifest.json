@@ -7,5 +7,7 @@
     }],
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
-    "display": "fullscreen"
+    "display": "fullscreen",
+    "start_url": "/",
+    "scope": "/"
 }
