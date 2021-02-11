@@ -25,6 +25,18 @@
 
     <!-- Animate On Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGRVW1CC8Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MGRVW1CC8Q");
+    </script>
   </head>
   <body>
     <div id="anchor-top" class="container-fluid">
@@ -52,7 +64,9 @@
           <a href="#anchor-first"><span class="btn-circle-header"></span></a>
         </div>
 
-        <video class="cloud" playsinline autoplay muted loop poster="mp4/displace.jpg">
+        <!--<div id="cloud"></div>-->
+
+        <video id="cloud" class="cloud" playsinline autoplay muted loop poster="mp4/displace.jpg">
           <source src="mp4/displace.mp4" type="video/mp4" />
           Your browser does not support embedded video.
         </video>
@@ -753,7 +767,9 @@
     </div>
 
     <script src="js/jquery.slim.min.js"></script>
-
+    <!--
+    <script src="js/videoload.js"></script>
+-->
     <script src="js/interaction.js"></script>
 
     <script src="js/dark.js"></script>
