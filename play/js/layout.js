@@ -65,7 +65,7 @@ function createLayout(elem, am, index) {
     var t = document.createTextNode(elem.tools[i]);
     l.appendChild(t);
 
-    ul.appendChild(l);
+    //ul.appendChild(l);
   }
 }
 
