@@ -1,9 +1,13 @@
 function createLayout(elem, am, index) {
+  let root = document.getElementById("root");
+
   const divContainer = document.createElement("div");
   divContainer.className = "project";
-  document.body.appendChild(divContainer);
+  divContainer.id = "chapter-" + elem.title;
 
-  console.log("bg", elem.background);
+  root.appendChild(divContainer);
+
+  //console.log("bg", elem.background);
 
   var p = document.getElementsByClassName("project")[index];
   p.style.backgroundColor = elem.background;
@@ -25,7 +29,7 @@ function createLayout(elem, am, index) {
 
   // CREATE TITLE
   var l = document.createElement("h1");
-  var t = document.createTextNode(elem.title);
+  var t = document.createTextNode(elem.title.toUpperCase());
   l.appendChild(t);
   divTextContainer.appendChild(l);
 
@@ -72,7 +76,7 @@ function createLayout(elem, am, index) {
 function myImage(dir, filename, imagenums) {
   var randomWidth = randomInteger(300, 500) + "px";
 
-  console.log("randomWidth", randomWidth);
+  // console.log("randomWidth", randomWidth);
   var image = document.createElement("IMG");
   image.setAttribute("src", "img/" + dir + "/" + filename);
   image.setAttribute("loading", "lazy");
@@ -103,7 +107,7 @@ function filterProjects(data, value) {
       var project = document.getElementsByClassName("project");
       project[index].style.display = "none";
 
-      console.log((data.project.length -= 1));
+      // console.log((data.project.length -= 1));
     }
   }
   data.project.forEach(list);
@@ -126,7 +130,6 @@ function fetchData() {
 
 window.onload = function () {
   fetchData();
-  console.log("loaded");
 };
 
 function randomInteger(min, max) {
@@ -171,3 +174,60 @@ function brighten(color, c) {
       .padStart(2, "0");
   return `#${calc(1, 2)}${calc(3, 2)}${calc(5, 2)}`;
 }
+
+var chap = document.getElementsByClassName("project");
+var scrollcount = 0;
+var info = document.getElementById("info");
+var ch;
+
+function scrollNext() {
+  if (scrollcount == chap.length - 1) {
+    scrollcount = 0;
+  } else {
+    scrollcount += 1;
+  }
+
+  ch = chap[scrollcount].id;
+  var next = document.getElementById("next");
+  next.setAttribute("href", "#" + ch);
+
+  // console.log("chap", ch, scrollcount);
+  //  info.innerHTML = "#" + ch;
+
+  return false;
+}
+
+function scrollPrev() {
+  if (scrollcount == 0) {
+    scrollcount = chap.length - 1;
+  } else {
+    scrollcount -= 1;
+  }
+  ch = chap[scrollcount].id;
+  var next = document.getElementById("prev");
+  next.setAttribute("href", "#" + ch);
+
+  // console.log("chap", ch, scrollcount);
+
+  // info.innerHTML = "#" + ch;
+
+  return false;
+}
+
+var currentScroll;
+var lastScroll;
+
+window.addEventListener("scroll", function (e) {
+  currentScroll = window.pageYOffset;
+
+  if (lastScroll < currentScroll) {
+    document.getElementById("down").style.color = "#EE82EE";
+    document.getElementById("up").style.color = "#0000ff";
+  }
+  if (lastScroll > currentScroll) {
+    document.getElementById("up").style.color = "#EE82EE";
+    document.getElementById("down").style.color = "#0000ff";
+  }
+
+  lastScroll = currentScroll;
+});
