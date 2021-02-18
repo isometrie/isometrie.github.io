@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PLAY . BETA &#128064;</title>
+    <title>PLAY &#128064;</title>
 
     <link rel="stylesheet" href="css/light.css" />
 
@@ -13,6 +13,7 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
     <script src="https://kit.fontawesome.com/9be16426d1.js" crossorigin="anonymous"></script>
   </head>
@@ -28,20 +29,28 @@
         <span id="info"></span>
         <a id="prev" onclick="scrollPrev()"><i id="up" class="fas fa-arrow-circle-up"></i></a>
         <a id="next" onclick="scrollNext()"><i id="down" class="fas fa-arrow-circle-down"></i></a>
+        <a href="#chapter-run" onclick="select('table')"><i class="fas fa-list"></i></a>
       </div>
 
       <div id="chapter-head"></div>
     </div>
-
-    <div id="root"></div>
     <!--
     <div class="btn" onclick="select('adobe')">adobe</div>
     <div class="btn" onclick="select('illustrator')">illustrator</div>
+    -->
+    <div id="root"></div>
+
+    <!--
     <div class="btn">sort</div>
     <div class="btn" >list</div>
     -->
 
-    <footer>&copy; 2021 PLAY. All images and videos.</footer>
+    <footer>
+      <div class="gif"></div>
+
+      &copy; 2021 PLAY. All images and videos.
+    </footer>
+
     <script src="js/smoothscrolling.js"></script>
     <script src="js/layout.js"></script>
   </body>
