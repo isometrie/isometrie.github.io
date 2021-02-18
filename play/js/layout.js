@@ -29,16 +29,24 @@ function createLayout(elem, am, index) {
 
   // CREATE TITLE
   var l = document.createElement("h1");
-  var t = document.createTextNode(elem.title.toUpperCase());
+  var t = document.createTextNode(elem.title.toUpperCase() + " (" + elem.year + ")");
   l.appendChild(t);
   divTextContainer.appendChild(l);
 
+  /*
+  $("h1").click(function () {
+    $(this).closest(".project").toggleClass("table");
+  });
+*/
+
   // CREATE YEAR
+  /*
   var l = document.createElement("div");
   var t = document.createTextNode(elem.year);
   l.appendChild(t);
   divTextContainer.appendChild(l);
   l.classList.add("year");
+  */
 
   // CREATE TEXT
   var article = document.createElement("article");
@@ -102,15 +110,23 @@ function select(value) {
 
 function filterProjects(data, value) {
   var num = 0;
-  function list(tools, index) {
-    if (!data.project[index].tools.includes(value)) {
-      var project = document.getElementsByClassName("project");
-      project[index].style.display = "none";
+  if (value == "table") {
+    $(".gallery").toggleClass("gallerytoggle");
+    var project = document.getElementsByClassName("project");
 
-      // console.log((data.project.length -= 1));
+    var count = 0;
+    $(".project").each(function () {
+      $(this).toggleClass("table");
+      $(this).toggleClass("list img");
+    });
+  } else {
+    function list(tools, index) {
+      if (!data.project[index].tools.includes(value)) {
+        var project = document.getElementsByClassName("project");
+      }
     }
+    data.project.forEach(list);
   }
-  data.project.forEach(list);
 }
 
 function fetchData() {
@@ -208,7 +224,6 @@ function scrollPrev() {
   next.setAttribute("href", "#" + ch);
 
   // console.log("chap", ch, scrollcount);
-
   // info.innerHTML = "#" + ch;
 
   return false;
