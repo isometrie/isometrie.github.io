@@ -16,8 +16,10 @@ body {
 
 h1 {
   font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  //cursor: pointer;
+  color: #2c2c2c;
 }
 
 li {
@@ -99,25 +101,6 @@ ul {
   font-size: 18px;
 }
 
-.project {
-  min-height: 100vh;
-  padding: 10vh 10vw;
-  color: var(--color-black);
-  z-index: 99;
-  background-color: var(--color-white);
-}
-
-.gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-
-.gallery img {
-  margin: 0 10px;
-}
-
 .btn {
   font-size: 20px;
   background-color: var(--color-black);
@@ -130,7 +113,7 @@ ul {
 }
 
 .btn:hover {
-  background-color: var(--color-dark);
+  background-color: #0000ff;
 }
 
 article {
@@ -139,17 +122,8 @@ article {
 }
 
 .text {
-  text-align: center;
+  //text-align: center;
   margin: 0 20vw;
-}
-
-footer {
-  display: grid;
-  align-items: flex-end;
-  padding: 20px;
-  min-height: 100vh;
-  color: var(--color-blue);
-  background-color: var(--color-white);
 }
 
 .fas {
@@ -168,4 +142,65 @@ footer {
 
 #info {
   margin-top: 10px;
+}
+
+footer {
+  display: grid;
+  align-items: flex-end;
+  height: 100vh;
+  color: var(--color-blue);
+  background-color: var(--color-black);
+  margin: 0;
+  font-size: 24px;
+}
+
+.project {
+  text-align: center;
+  height: 100vh;
+  // overflow: hidden;
+  padding: 10vh 10vw;
+  color: var(--color-black);
+  z-index: 99;
+  font-size: 20px;
+  background-color: var(--color-white);
+  transition: height 1s ease;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.gallerytoggle {
+  justify-content: flex-start;
+  display: inline;
+}
+
+.gallery img {
+  margin: 0 10px;
+}
+
+/* TOGGLE GALLERY TO LIST AND BACK */
+
+.table {
+  border-bottom: 1px solid #000000;
+  height: 120px;
+  padding: 10px;
+  font-size: 16px !important;
+  transition: height 1s linear;
+  background-color: #ccc !important;
+}
+
+.list img {
+  height: 50px;
+  transition: height 1s linear;
+}
+
+.gif {
+  background-image: url("../img/run/run.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 70vh;
 }
