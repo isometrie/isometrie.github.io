@@ -91,10 +91,7 @@
       "images": ["r.jpg", "g.jpg", "b.png"],
       "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
 
-    },
-    
-    
-    
+    }, 
     {
       "title": "octapods",
       "year": 2017,
@@ -103,7 +100,18 @@
       "background": "#999999",
       "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
 
-    },{
+    }, 
+    {
+      "title": "gameboy",
+      "year": 2017,
+      "tools": ["cinema4d"],
+      "images": ["gameboy.jpg", "gameboy_gradient.jpg"],
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+
+    },
+    
+    
+    {
       "title": "neon",
       "year": 2015,
       "tools": ["cinema4d"],
@@ -128,10 +136,10 @@
 
     },
     {
-      "title": "glass",
-      "year": 2019,
+      "title": "hello",
+      "year": 2017,
       "tools": ["cinema4d"],
-      "images": ["glass1.jpg", "glass5.jpg"],
+      "images": ["hello.jpg"],
       "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
 
     }

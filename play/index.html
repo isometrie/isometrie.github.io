@@ -21,15 +21,18 @@
     <div class="intro">this way <i class="fas fa-arrow-circle-down"></i></div>
 
     <div id="chapter-wrapper">
-      <a href="#chapter-wrapper"><img class="logo" src="assets/logo_sm_blue.png" /></a>
-      <div class="teaser">
+      <div class="header">
+        <a href="#chapter-wrapper"><img class="logo" src="assets/logo_sm_blue.png" /></a>
         <span>visual logbook</span>
         <span>100% synthetic</span>
         <span>open 24/7</span>
-        <span id="info"></span>
-        <a id="prev" onclick="scrollPrev()"><i id="up" class="fas fa-arrow-circle-up"></i></a>
-        <a id="next" onclick="scrollNext()"><i id="down" class="fas fa-arrow-circle-down"></i></a>
-        <a href="#chapter-run" onclick="select('table')"><i class="fas fa-list"></i></a>
+        <div>
+          <a id="prev" onclick="scrollPrev()"><i id="up" class="fas fa-arrow-circle-up"></i></a>
+          <a id="next" onclick="scrollNext()"><i id="down" class="fas fa-arrow-circle-down"></i></a>
+        </div>
+        <div>
+          <a href="#chapter-run" onclick="select('table')"><i class="fas fa-list"></i></a>
+        </div>
       </div>
 
       <div id="chapter-head"></div>
@@ -48,7 +51,7 @@
     <footer>
       <div class="gif"></div>
 
-      &copy; 2021 PLAY. All images and videos.
+      <span class="copy">&copy; 2021 PLAY. All images and videos.</span>
     </footer>
 
     <script src="js/smoothscrolling.js"></script>
