@@ -1,6 +1,14 @@
 {
   "project": [
     {
+      "title": "run",
+      "year": 2021,
+      "tools": ["photoshop", "cinema4d"],
+      "images": ["run.gif"],
+      "background": "#000000",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+    },
+    {
       "title": "hype",
       "year": 2018,
       "tools": ["adobe", "illustrator", "cinema4d", "react"],
@@ -14,6 +22,15 @@
       "tools": ["cinema4d"],
       "images": ["1.png", "2.png", "3.png"],
       "background": "#e0e0e0",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+
+    },
+    {
+      "title": "flow",
+      "year": 2018,
+      "tools": ["cinema4d"],
+      "images": ["flow.jpg"],
+      "background": "#000000",
       "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
 
     },
