@@ -9,6 +9,14 @@
       "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
     },
     {
+      "title": "dancing",
+      "year": 2021,
+      "tools": ["cinema4d"],
+      "images": ["dancing.mp4"],
+      "background": "#ffffff",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+    },
+    {
       "title": "hype",
       "year": 2018,
       "tools": ["adobe", "illustrator", "cinema4d", "react"],
@@ -118,8 +126,6 @@
       "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
 
     },
-    
-    
     {
       "title": "neon",
       "year": 2015,
@@ -139,7 +145,7 @@
       "title": "rorschach",
       "year": 2019,
       "tools": ["cinema4d"],
-      "images": ["1.png", "2.png", "3.png"],
+      "images": ["rorschach.mp4"],
       "background": "#ffffff",
       "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
 
