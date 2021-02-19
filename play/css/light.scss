@@ -130,7 +130,9 @@ article {
 }
 
 #info {
-  margin-top: 10px;
+  width: 80px;
+  text-align: right;
+  display: inline-block;
 }
 
 footer {
@@ -193,10 +195,6 @@ footer {
   height: 70vh;
 }
 
-.copy {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
+:focus {
+  outline: none;
 }
