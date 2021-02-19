@@ -17,11 +17,24 @@ function createLayout(elem, am, index) {
   divContainer.appendChild(divImgContainer);
 
   var imagenums = elem.images.length;
+  console.log("imgs", elem.images);
 
-  for (var i = 0; i < imagenums; i++) {
-    var img = myImage(elem.title, elem.images[i], imagenums);
-    divImgContainer.appendChild(img);
+  var filetype = String(elem.images);
+
+  if (filetype.includes(".mp4")) {
+    console.log("vide gefunden");
+    var video = myVideo(elem.title, elem.images);
+    divImgContainer.appendChild(video);
   }
+
+  if (filetype.includes(".gif") || filetype.includes(".jpg") || filetype.includes(".png")) {
+    for (var i = 0; i < imagenums; i++) {
+      var img = myImage(elem.title, elem.images[i], imagenums);
+      divImgContainer.appendChild(img);
+    }
+  }
+
+  //var imagenums = elem.images.length;
 
   const divTextContainer = document.createElement("div");
   divTextContainer.className = "text";
@@ -83,9 +96,8 @@ function createLayout(elem, am, index) {
 
 function myImage(dir, filename, imagenums) {
   var randomWidth = randomInteger(300, 500) + "px";
-
-  // console.log("randomWidth", randomWidth);
   var image = document.createElement("IMG");
+
   image.setAttribute("src", "img/" + dir + "/" + filename);
   image.setAttribute("loading", "lazy");
 
@@ -93,9 +105,24 @@ function myImage(dir, filename, imagenums) {
   var maxSize = (100 / imagenums) * 1;
 
   image.style.maxWidth = randomInteger(minSize, maxSize) + "%";
-  image.classList.add("fader");
 
   return image;
+}
+
+function myVideo(dir, filename) {
+  var video = document.createElement("video");
+
+  video.setAttribute("src", "img/" + dir + "/" + filename);
+  video.muted = true;
+  video.autoplay = true;
+  video.loop = true;
+  video.playsInline = true;
+  video.controls = true;
+  video.load();
+
+  // video.setAttribute("class", "cloud");
+
+  return video;
 }
 
 function select(value) {
@@ -231,9 +258,19 @@ function scrollPrev() {
 
 var currentScroll;
 var lastScroll;
+var info = document.getElementById("info");
+var scrollpercent;
 
 window.addEventListener("scroll", function (e) {
-  currentScroll = window.pageYOffset;
+  var pagefulllheight = document.body.scrollHeight;
+  var scrollposition = window.pageYOffset;
+  var windowviewheight = window.innerHeight;
+
+  scrollpercent = (scrollposition / (pagefulllheight - windowviewheight)) * 100;
+
+  info.innerHTML = Math.floor(scrollpercent) + "%";
+
+  currentScroll = scrollposition;
 
   if (lastScroll < currentScroll) {
     document.getElementById("down").style.color = "#EE82EE";
