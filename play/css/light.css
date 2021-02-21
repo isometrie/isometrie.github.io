@@ -205,14 +205,26 @@ footer {
 }
 
 .gif {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("../img/run/run.gif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   height: 70vh;
+  color: var(--color-white);
+  font-size: 30px;
 }
 
 :focus {
   outline: none;
+}
+
+a {
+  color: var(--color-blue);
 }
 /*# sourceMappingURL=light.css.map */

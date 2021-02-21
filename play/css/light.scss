@@ -188,13 +188,22 @@ footer {
 }
 
 .gif {
+  display: grid;
+  text-align: center;
+  align-items: center;
   background-image: url("../img/run/run.gif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   height: 70vh;
+  color: var(--color-white);
+  font-size: 30px;
 }
 
 :focus {
   outline: none;
+}
+
+a {
+  color: var(--color-blue);
 }
