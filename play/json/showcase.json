@@ -1,6 +1,14 @@
 {
   "project": [
     {
+      "title": "mocap",
+      "year": 2021,
+      "tools": ["photoshop", "cinema4d"],
+      "images": ["mocap.mp4"],
+      "background": "#000000",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+    },
+    {
       "title": "run",
       "year": 2021,
       "tools": ["photoshop", "cinema4d"],
