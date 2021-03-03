@@ -4,8 +4,9 @@
 @import "bootstrap/variables";
 
 :root {
-  --color-primary: #3700ff;
+  --color-primary-softest: #998eff;
   --color-primary-soft: #5948ff;
+  --color-primary: #3700ff;
   --color-primary-dark: #0a0025;
 
   --color-white: #ffffff;
@@ -1145,4 +1146,18 @@ u {
   text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 1px solid var(--color-middle);
+}
+
+li.blink {
+  animation-name: blinking;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes blinking {
+  to {
+    background-color: var(--color-primary-softest);
+  }
 }
